@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial scale=1.0">
-<title>newbie nostriches</title>
+<title>a down to earth nostr guide for newbie nostriches</title>
 <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 <!-- JavaScript Bundle with Popper -->
@@ -24,9 +24,9 @@
   <div class="container-fluid bg-image d-flex justify-content-center align-items-center" style="background-image: url('#'); height: 450px;">
     <div class="container bg-dark bg-opacity-60 text-center rounded-5">
       <blockquote class="blockquote">
-        <h1 class="display-1">for newbie nostriches</h1>
-        <h2 class="mb-0">those who were, those who are, those who will be</h2>
-        <p>a down to earth guide</p>
+        <h1 class="display-1">a down-to-earth <br>nostr guide</h1>
+        <h2 class="mb-0">for newbie nostriches</h2>
+        <p></p>
       </blockquote>
   </div>
 </div>
@@ -50,17 +50,17 @@
       <p>You'd have all you posts, follows, and followers...</p>
       <p>Your friends could be on Facebook and you on Twitter and you could still follow each other and see each other's posts.</p>
       <p>You could use all of those social media platforms or only one and no one could stop you from switching to the service that felt most like you.</p>
-      <p>You'd only need to post to one of them and you could find that post in all of them (as long as it wasn't censored).</p>
-      <p>Today you are not able to do that with Facebook & Twitter but many apps and websites with nostr are being built and improved.</p>
-      <p>Can you imagine the possibilities?</p>
+      <p>You'd only need to post to one of them and you could find that post in all of them (as long as it wasn't censored, though that is less likely with nostr - more on that later).</p>
+      <p>That is not the reality of today, but it is becoming a reality on apps and websites running on nostr.</p>
+      <p>We are early birds to this technology, but can you already imagine the possibilities? Nostr is opening doors to apps and websites not just on social media. The future looks bright.</p>
       <h2>What do these keys look like?</h2>
       <p>Each key is a unique and long string of numbers: <br>
 npub180cvv07tjdrrgpa0j7j7tmnyl2yr6yr7l8j4s3evf6u64th6gkwsyjh6w6
       </p>
       <h3>Why are they so weird?</h3>
-      <p>Have you ever tried to create an account somewhere, and every username or handle you could think of was taken? They have to be unique, so you often need to add numbers or odd words. In nostr, it's your keys that are unique, not your handle. (They also only belong to you, instead of to the platform you're joining.)</p>
+      <p>Have you ever tried to create an account somewhere, and every username or handle you could think of was taken? They have to be unique, so you often need to add numbers or odd words. In nostr, it's your keys that are unique, not your handle. (They also only belong to you, instead of a service you're joining.)</p>
       <h4>Your handle can be anything you want</h4>
-      <p>How many people have you met in your life that have the same name as you? Just because you share a name with someone doesn't mean they are you. Your uniqueness is in your DNA. It's in your life experiences. In nostr, it's in your keys. Your keys make you you. Your handle and name can change as your life changes, or remain the same. It's up to you.</p>
+      <p>Multiple people can have the same handle like many people may be called the same name as you. In life, your uniqueness is in your DNA. It's in your life experiences. In nostr, it's in your keys. Your keys make you you. Your handle and name can change as your life changes, or remain the same. It's up to you.</p>
       <h4>But how are people going to find me?</h4>
       <p>You get two keys: a public key and a secret key (aka private key)</p>
       <h5>Key 1: Public Key (npub+long string of numbers)</h5>
@@ -68,14 +68,11 @@ npub180cvv07tjdrrgpa0j7j7tmnyl2yr6yr7l8j4s3evf6u64th6gkwsyjh6w6
       <h6>To follow or not to follow</h6>
       <p>Follow your friends and you'll have them on your list. Since it's still early in the development of nostr, you may run into a case of disappearing follows or followers. Make sure you add enough relays (more on that soon), and give it a little time for builders to fix the glitches. In the meantime, you can add their npub keys to your phone contacts.</p>
       <h6>Tagging</h6>
-      <p>To tag someone you use @npubalongstringofnumbersuniquetosomeoneyouknow, and when you send your post, nostr will show it like this: @yourhandle. You can also tag individual notes.</p>
+      <p>To tag someone you use @npubALongStringOfnumbersUniqueToSomeone, and when you send your post, nostr will show it like this: @handle. You can also tag individual notes.</p>
       <h5>Key 2: Secret Key (nsec+long string of numbers)</h5>
       <p>This is where it gets interesting. You control this key, which means only you have it and you need to save it.</p>
       <p>Password managers are a good way to do that, encrypted uploads to the cloud will probably be built-in in the future.</p>
       <p>No one can help you recover your secret key if you lose it. <br>No one can help you recover your secret key if you lose it. <br>No one...Sorry, it begs repeating. <br>(Though some solutions are being thought of to replace keys that may have been lost or stolen)</p>
-      <h4>Your words are forever</h4>
-      <p>And so are typos</p>
-      <p>When you send a post (aka note), you sign it with your key, which means only you can send it and no one can change it.</p>
       <h4>Someone could steal my keys?</h4>
       <p>Make sure you share your public key with your friends or on social media, NOT your secret one.</p>
       <p>When you sign in to a nostr app or website, you give them both your public and secret key (a little bit like adding your username and password on other sites). These services will use your secret key to sign each post you make, without you needing to think about it.</p>
