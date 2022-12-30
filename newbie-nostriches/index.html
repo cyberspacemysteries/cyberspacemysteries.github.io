@@ -44,52 +44,39 @@
   <div class="container">
     <div class="row">
       <div class="col">
-      <div class="box align-self-center">
+        <h2 class="display-3 pb-1">nostering in 5 steps</h2>
         <blockquote class="blockquote">Nostr works a little different than you may be used to, but once you give it a try, it can be simple and empowering.</blockquote>
-      <h2>You get a unique set of keys</h2>
-      <p>Keys open doors to let you in somewhere, that's obvious. What's not so obvious is that needing a different key for different doors is not necessary &mdash; at least when you're using nostr.</p>
-      <h2>You get master keys</h2>
-      <p class="lead">only you own them, only you carry them, be careful not to forget them, protect them from getting stolen</p>
-      <h3>Imagine an open door to any service</h3>
-      <p>Imagine that you could enter any platform like Twitter, Reddit, Facebook, all with one set of keys. That is not the reality of today, but only because they are not running on the nostr protocol, though they could. <br>Any app or website developed with nostr could let you in with your master keys.
-      <p>Many already do.</p>
-      <p>Many more will join them.</p>
-      <h3>Imagine no more starting over</h3>
-      <p>No matter which platform you were using, you'd have access to everything that encompasses your identity:</p>
-      <p>You'd have all you posts, follows, and followers...</p>
-      <p>Your friends could be on Facebook and you on Twitter and you could still follow each other and see each other's posts.</p>
-      <p>You could use all of those social media platforms or only one and no one could stop you from switching to the service that felt most like you.</p>
-      <p>You'd only need to post to one of them and you could find that post in all of them (as long as it wasn't censored, though that is less likely with nostr - more on that later).</p>
-      <p>That is not the reality of today, but it is becoming a reality on apps and websites running on nostr.</p>
-      <p>We are early birds to this technology, but can you already imagine the possibilities? Nostr is opening doors to apps and websites not just on social media. The future looks bright.</p>
-      <h2>What do these keys look like?</h2>
-      <p>Each key is a unique and long string of numbers: <br>
-npub180cvv07tjdrrgpa0j7j7tmnyl2yr6yr7l8j4s3evf6u64th6gkwsyjh6w6
-      </p>
-      <h3>Why are they so weird?</h3>
-      <p>Have you ever tried to create an account somewhere, and every username or handle you could think of was taken? They have to be unique, so you often need to add numbers or odd words. In nostr, it's your keys that are unique, not your handle. (They also only belong to you, instead of a service you're joining.)</p>
-      <h4>Your handle can be anything you want</h4>
-      <p>Multiple people can have the same handle like many people may be called the same name as you. In life, your uniqueness is in your DNA. It's in your life experiences. In nostr, it's in your keys. Your keys make you you. Your handle and name can change as your life changes, or remain the same. It's up to you.</p>
-      <h4>But how are people going to find me?</h4>
-      <p>You get two keys: a public key and a secret key (aka private key)</p>
-      <h5>Key 1: Public Key (npub+long string of numbers)</h5>
-      <p>Share your public key with your friends. They'll search for it and find you.</p>
-      <h6>To follow or not to follow</h6>
-      <p>Follow your friends and you'll have them on your list. Since it's still early in the development of nostr, you may run into a case of disappearing follows or followers. Make sure you add enough relays (more on that soon), and give it a little time for builders to fix the glitches. In the meantime, you can add their npub keys to your phone contacts.</p>
-      <h6>Tagging</h6>
-      <p>To tag someone you use @npubALongStringOfnumbersUniqueToSomeone, and when you send your post, nostr will show it like this: @handle. You can also tag individual notes.</p>
-      <h5>Key 2: Secret Key (nsec+long string of numbers)</h5>
-      <p>This is where it gets interesting. You control this key, which means only you have it and you need to save it.</p>
-      <p>Password managers are a good way to do that, encrypted uploads to the cloud will probably be built-in in the future.</p>
-      <p>No one can help you recover your secret key if you lose it. <br>No one can help you recover your secret key if you lose it. <br>No one...Sorry, it begs repeating. <br>(Though some solutions are being thought of to replace keys that may have been lost or stolen)</p>
-      <h4>Someone could steal my keys?</h4>
-      <p>Make sure you share your public key with your friends or on social media, NOT your secret one.</p>
-      <p>When you sign in to a nostr app or website, you give them both your public and secret key (a little bit like adding your username and password on other sites). These services will use your secret key to sign each post you make, without you needing to think about it.</p>
-      <p>Some people found a possible security hole when visiting websites. For now try using apps or install a browser extension that holds your secret key for you.</p>
-      <p class="text-center">More coming soon</p>
-      <p class="text-center">28.Dec.2022</p>
+        <p class="display-5">step 1</p>
+        <h3>Choose a nostr app or website & enter it</h3>
+        <p><a class="text-light" href="https://nostr.net" target="new">nostr.net</a> is keeping a good list, find options under "clients"</p>
+        <p class="display-5">step 2</p>
+        <h3>Get your unique set of keys</h3>
+        <p>With this one set of keys you can sign-in to almost any nostr product, and it will bring up your profile information, posts, follows, and followers.</p>
+        <h4>Your public key: (npub+LongStringOfNumbersUniqueToYou)</h4>
+        <p>Share it with your friends so they can search for it, find you & tag you.</p>
+        <h4>Your secret key: (nsec+LongStringOfNumbersUniqueToYou)</h4>
+        <p>This key lets you post.</p>
+        <p>Keep it safe, no one can help you get it back if you lose it. Password managers are a good way to save them.</p>
+        <p>If in step one, you've chosen a nostr website, for security, install a <a class="text-light" href="https://github.com/nostr-protocol/nips/blob/master/07.md" target="new">browser extension</a> to keep your keys safer.</p>
+        <a class="text-light" href="keys/index.html">More on keys...</a>
+        <br><br>
+        <p class="display-5">step 3</p>
+        <h3>Add some relays from <a class="text-light" href="https://nostr.watch" target="new">nostr.watch's list</a>, perhaps 8 is a magic number!?</h3>
+        <p>Nostr is decentralized, which means its information is spread unto different servers across the globe. These servers running nostr software are called relays. They can be run by anyone (if you're a little tech savvy, you could <a class="text-light" href="https://andreneves.xyz/p/set-up-a-nostr-relay-server-in-under" target="new">run a nostr relay</a> too). These relays do not belong to a single company, instead, the software is written so you are the one who controls your keys and your identity.</p>
+        <p>The nostr relays keep your information and share it with other relays. Adding a few relays to your nostr profile is a way to make sure your information is still available even if a relay were to go down.</p>
+        <p class="display-5">step 4</p>
+        <h3>Make your first post</h3>
+        <p>A post saying <em>hello world</em>, <em>hello nostr</em>, or <em>testing</em> will do.</p>
+        <p>Perhaps you'll get a 🤙 from jack</p>
+        <p>You can't upload a photo directly. This is so nostr relays run light. You can upload your photo to a website, like <a class="text-light" href="https://nostr.build" target="new">nostr.build</a>, and in your post, type the website url that directs to your photo, like this url: <a class="text-light" href="https://nostr.build/i/817.png" target="new">https://nostr.build/i/817.png</a></p>
+        <p class="display-5">step 5</p>
+        <h3>Find your niche</h3>
+        <p>As you start following people, you will see their posts in real time on your home tab. Every once in a while visit the Global tab, a universe of people awaits there too.</p>
+        <p>For finding friends you know from Twitter, visit <a class="text-light" href="https://nostr.directory" target="new">nostr.directory</a>. Go ahead, add yourself to the list too.</p>
+        <p>For finding people who are most followed and most active on nostr, along with other stats, visit <a class="text-light" href="https://nostr.io/stats" target="new">nostr.io/stats</a></p>
+        <p class="text-center">Comments and feedback are always welcome. More coming soon</p>
+        <p class="text-center">30.Dec.2022</p>
       </div>
-    </div>
     </div>
   </div>
   <!--- end content --->
