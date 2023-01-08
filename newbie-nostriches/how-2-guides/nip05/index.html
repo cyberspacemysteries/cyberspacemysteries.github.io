@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!---hello fellow nostrich coder--->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial scale=1.0">
+<title>Nostr-ings how 2 guide to nip05 website verification</title>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/custom.css"/>
+<!--- open graph --->
+<meta property="og:title" content="Nostr-ings how 2 guide to nip05 website verification" />
+<meta property="og:type" content="article" />
+<meta property="og:description" content="on your GitHub website (without using a terminal)" />
+<meta property="og:url" content="https://nostr-ings.com/newbie-nostriches/how-2-guides/nip05/index.html" />
+<meta property="og:image" content="https://nostr-ings.com/images/how-2-guides/nip05/nostr-nip05-0-social.png" />
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:site_name" content="nostr-ings open design community" />
+<!--- end open graph --->
+</head>
+<body class="bg-dark text-light">
+  <!---navigation--->
+  <nav class="navbar navbar-expand navbar-light bg-light">
+    <div class="container">
+      <a href="../../../index.html" class="navbar-brand">nostr-ings</a>
+    </div>
+  </nav>
+  <!---end navigation--->
+  <!--- main message --->
+  <div class="container-fluid bg-image d-flex justify-content-center align-items-center" style="background-image: url('#'); height: 450px;">
+    <div class="container bg-dark bg-opacity-60 text-center rounded-5">
+      <blockquote class="blockquote">
+        <h1 class="display-1">nostr-ings <br>how 2 guide</h1>
+        <h2 class="mb-0">to nip05 website verification</h2>
+        <p>on your GitHub website (without using a terminal)</p>
+      </blockquote>
+  </div>
+</div>
+  <!--- end main message--->
+  <!--- content --->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="display-4">Tie your nostr identity to your website</h2>
+        <p>Logged into <a class="text-light" href="https://github.com/" target="new" alt="GitHub">github.com</a>, find your website's repository.</p>
+        <p class="alert alert-dark">Hint | it ends with <b>.github.io</b></p>
+        <img class="img-fluid pt-3 pb-5" src="../../../images/newbie-nostriches/how-2-guides/nip05/nostr-nip05-1.png" alt="nostr-ings how 2 guide to nip05 website verification">
+        <h3>Click on the button <b>Add file</b>, then click <b>Create new file</b></h3>
+        <img class="img-fluid pt-3 pb-5" src="../../../images/newbie-nostriches/how-2-guides/nip05/nostr-nip05-2-add-file.png" alt="nostr-ings how 2 guide to nip05 website verification">
+        <h3>Type:</h3>
+        <pre><code class="m-5">.well-known&#47;</code></pre>
+        <p class="alert alert-dark">Hint | well-known must have a period <b>.</b> before & a forward slash <b>/</b> after</p>
+        <img class="img-fluid pt-3 pb-5" src="../../../images/newbie-nostriches/how-2-guides/nip05/nostr-nip05-4-well-known.png" alt="nostr-ings how 2 guide to nip05 website verification">
+        <h3>Type:</h3>
+        <pre><code class="m-5">nostr.json</code></pre>
+        <img class="img-fluid pt-3 pb-5" src="../../../images/newbie-nostriches/how-2-guides/nip05/nostr-nip05-5-well-known.png" alt="nostr-ings how 2 guide to nip05 website verification">
+        <h3>Select, copy and paste the following code to the body of the file:</h3>
+        <pre><code class="m-5">
+          {
+            "names": {
+              "mynostrhandle": "myhexkey"
+            }
+          }
+        </code></pre>
+        <br><br>
+        <h3>Between the second set of quotation marks replace mynostrhandle with your nostr handle, without the @ symbol.</h3>
+        <p>In nostr you can choose any handle you want. If you change it, remember to come back and update this file.</p>
+        <h3>Between the third set of quotation marks replace myhexkey with your hex key.</h3>
+        <p>If you do not know your hex key, no worries, keep scrolling down.</p>
+        <img class="img-fluid pt-3 pb-5" src="../../../images/newbie-nostriches/how-2-guides/nip05/nostr-nip05-6-nostr-json.png" alt="nostr-ings how 2 guide to nip05 website verification">
+        <h3>Remember to click on <b>Save</b>, or in this case <b>Commit changes</b></h3>
+        <h2 class="display-4 pt-5">(?_?) My hex key?</h2>
+        <p>Hopefully you know your npub or public key by now</p>
+        <p>If you don't, please refer to step 2 in <a class="text-light" href="../nostering-in-5-steps/index.html" target="new">Nostering in 5 steps</a></p>
+        <h3>Enter <a class="text-light" href="https://damus.io/key/" target="new">https://damus.io/key</a><h3>
+        <h3>In the first box, paste your public key (starts with npub)</h3>
+        <p>This Damus page will convert you npub key to a hex key in an instant</p>
+        <img class="img-fluid pt-3 pb-5" src="../../../images/newbie-nostriches/how-2-guides/nip05/nostr-nip05-7-hex-key.png" alt="nostr-ings how 2 guide to nip05 website verification">
+        <h3>Copy your hex key and paste it in you nostr.json file (as mentioned earlier)</h3>
+        <h2 class="display-4 pt-5">Let nostr products read your nostr.json</h2>
+        <p>Back in your repository, let's create another file</p>
+        <img class="img-fluid pt-3 pb-5" src="../../../images/newbie-nostriches/how-2-guides/nip05/nostr-nip05-1.png" alt="nostr-ings how 2 guide to nip05 website verification">
+        <h3>Click on the button <b>Add file</b>, then click <b>Create new file</b></h3>
+        <img class="img-fluid pt-3 pb-5" src="../../../images/newbie-nostriches/how-2-guides/nip05/nostr-nip05-2-add-file.png" alt="nostr-ings how 2 guide to nip05 website verification">
+        <h3>Type:</h3>
+        <pre><code class="m-5">_config.yml</code></pre>
+        <img class="img-fluid pt-3 pb-5" src="../../../images/newbie-nostriches/how-2-guides/nip05/nostr-nip05-8-config.png" alt="nostr-ings how 2 guide to nip05 website verification">
+        <h3>In the body of the file, type:</h3>
+        <pre><code class="m-5">include: [".well-known"]</code></pre>
+        <h3>Remember to save</h3>
+        <img class="img-fluid pt-3 pb-5" src="../../../images/newbie-nostriches/how-2-guides/nip05/nostr-nip05-9-config.png" alt="nostr-ings how 2 guide to nip05 website verification">
+        <h3>Add your nip05 to your nostr profile</h3>
+        <p>It's your handle and your website's domain:</p>
+        <pre><code class="m-5">mynostrhandle@mywebsite.com</code></pre>
+        <p>The steps to add it to your profile may vary based on which nostr product (client) you're using.</p>
+        <h3>Congrats! You've tied your nostr to your website</h3>
+        <br><br>
+        <p class="alert alert-dark">Reading material: <a href="https://github.com/nostr-protocol/nips/blob/master/05.md" target="new">NIP-05</a> in the nostr-protocol's GitHub</p>
+        <p class="text-center">Grateful for comments and feedback</p>
+        <p class="text-center">30.Dec.2022</p>
+      </div>
+    </div>
+  </div>
+  <!--- end content --->
+  <!--- end content --->
+  <!---footer--->
+  <div class="container-fluid bg-dark border-top mt-5 pt-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h2>nostr-ings</h2>
+          <h3>unleashing the nostrich within</h3>
+          <p>independent open design</p>
+          <a class="btn btn-light" href="https://discord.gg/bJrWFds6je" target="new" alt="Nostr-ings on discord">discord</a>
+          <a href="https://github.com/nostr-ings" class="btn btn-dark border-light" target="new">github</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="container mt-5 pt-5 pb-3">
+      <div class="row">
+        <div class="col">
+          <p class="text-center">Independent open design | <a href="https://donate.nostr-ings.com/" class="text-light" target="new">donate</a></p>
+          <p class="text-center">Built to be free with <a href="https://creativecommons.org/publicdomain/zero/1.0/" class="text-light" target="new">CC0 1.0</a></p>
+        </div>
+      </div>
+    </div>
+  <!---end footer--->
+</body>
+</html>
