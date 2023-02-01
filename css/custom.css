@@ -1,1 +1,50 @@
+/* pages and rabbit holes */
+:root {
+   --computer: #dbdfe2;
+   --computer-shadow: #aaabaf;
+   --space: #010837;
+   --text: #65ffff;
+   --white: #ffffff;
+   --offwhite: #f1f1f1;
+   --grey: #ccc;
+   --black: #000000;
+   --offblack: #1B1B1B;
+   --orange: #Ffac48;
+   --purple: #DC66FA;
+   --teal: #65d1d1;
+         }
+/* body */
+body {
+background-color: var(--offblack);
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/about/nostr-ings-background.png");
+  min-height: 100%;
+}
+.n-padding-top {
+  padding-top: 10%;
+}
+
+.n-padding {
+  padding: 20%, 5%, 20%, 5%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+.n-text-purple {
+  color: var(--purple);
+}
+.npub {
+  word-wrap: break-word;
+}

@@ -5,11 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial scale=1.0">
 <title>nostr-ings open design community</title>
-<!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-<!-- JavaScript Bundle with Popper -->
-<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="css/custom.scss"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/custom.css" />
 <!--- open graph --->
 <meta property="og:title" content="nostr-ings open design community" />
 <meta property="og:type" content="article" />
@@ -20,102 +19,209 @@
 <meta property="og:site_name" content="nostr-ings open design community" />
 <!--- end open graph --->
 </head>
-<body class="bg-dark text-light">
-  <!---navigation--->
-  <nav class="navbar navbar-expand navbar-light bg-light">
-    <div class="container">
-      <a href="#" class="navbar-brand">nostr-ings</a>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide w3-hover-black">nostr-ings</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#nostr" class="w3-bar-item w3-button w3-hover-purple">why nostr</a>
+      <a href="newbie-nostriches/index.html" class="w3-bar-item w3-button w3-hover-purple">how-to</a>
+      <a href="#discover" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-th"></i>&nbsp;&nbsp;discover (soon)</a>
+      <a href="https://donate.nostr-ings.com" target="new" alt="donate with BTCPayServer" class="w3-bar-item w3-button w3-hover-amber"><i class="fa fa-bolt"></i>&nbsp;&nbsp;donate</a>
     </div>
-  </nav>
-  <!---end navigation--->
-  <!--- main message --->
-  <div class="container-fluid bg-image d-flex justify-content-center align-items-center" style="background-image: url('#'); height: 450px;">
-    <div class="container bg-dark bg-opacity-60 text-center rounded-5">
-      <blockquote class="blockquote">
-        <h1 class="display-1">nostr-ings</h1>
-        <h2 class="mb-0">unleashing the nostrich within</h2>
-        <p>an open design community for those running on nostr</p>
-      </blockquote>
-      <div class="container">
-        <a class="btn btn-light" href="https://discord.gg/bJrWFds6je" target="new" alt="Nostr-ings on discord">connect on discord</a>
-        <a class="btn btn-dark border-light" href="newbie-nostriches/index.html" alt="For newbie nostriches">what is nostr?</a>
-      </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-purple w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
 </div>
-  <!---end main message--->
-  <!--- content --->
-  <div class="container">
-    <div class="row">
-      <div class="col">
-      <div class="box align-self-center">
-      <h2 class="text-center">redesigning the nostr experience</h2>
-      <p class="text-center">because adoption happens as people use nostr products</p>
-      </div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple w3-large w3-padding-16">Close ×</a>
+  <a href="#nostr" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple">why nostr</a>
+  <a href="newbie-nostriches/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple">how-to</a>
+  <a href="#discover" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple">discover (soon)</a>
+  <a href="https://donate.nostr-ings.com" target="new" alt="donate with BTCPayServer" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-amber">donate</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-padding-top-64" id="home">
+  <div class="w3-center w3-text-white w3-padding">
+    <br><br><br>
+    <h1 class="w3-jumbo">Nostr-ings</h1><br>
+    <h2 class="w3-xxlarge">discover the nostr universe</h2>
+    <h3 class="w3-xlarge">creative expression beyond what you know of social media</h2>
+    <a href="newbie-nostriches/index.html" class="w3-button w3-black w3-border w3-padding-large w3-large w3-margin-top w3-hover-white w3-round-xxlarge" alt="Nostr guide for newbie nostriches">how 2 nostr</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#discover" class="w3-button w3-purple w3-hover-white w3-border w3-padding-large w3-large w3-margin-top w3-hover-purple w3-round-xxlarge">discover nostr clients<br> (coming soon)</a>
+  </div>
+  <div class="w3-display-bottomleft w3-text-white w3-xxlarge" style="padding:24px 48px">
+    <a href="https://github.com/nostr-ings/nostr-ings.github.io" target="new"><i class="fa fa-github w3-hover-opacity"></i></a>
+  </div>
+</header>
+<!-- About Section -->
+<div class="w3-container w3-text-white" style="padding:128px 16px" id="about">
+  <h2 class="w3-center">What's coming soon on <br>Nostr-ings</h2>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-third">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo w3-center"></i>
+      <h3 class="w3-large"><a href="newbie-nostriches/index.html" alt="Nostr guide for newbie nostriches">Newbie Nostriches</a></h3>
+      <p>Welcome to nostr. Learn about it, how to use it, and why it matters.</p><br><br>
     </div>
+    <div class="w3-third">
+      <i class="fa fa-th w3-margin-bottom w3-jumbo"></i>
+      <h3 class="w3-large">Nostr Universe</h3>
+      <p>Discover nostr apps and websites, and learn about their latest features.</p><br><br>
+    </div>
+    <div class="w3-third">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <h3 class="w3-large"><a href="nosy-nostrich-club/index.html">Nosy Nostrich Club</a></h3>
+      <p>Looking at UI/UX across the nostr universe. Design support and open library.</p><br><br>
     </div>
   </div>
-  <div class="container">
-    <div class="row">
-      <div class="card-group">
-        <!--- 4 newbie nostriches --->
-        <div class="card bg-dark">
-          <img src="" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title"><a href="newbie-nostriches/index.html" class="text-light">Newbie Nostriches</a></h5>
-            <p class="card-text">down to earth guide to discovering the ins and outs of nostr</p>
-          </div>
-          <div class="card-footer text-center">
-          </div>
-        </div>
-        <!--- end 4 newbie nostriches --->
-        <!--- nosy nostriches review club --->
-        <div class="card bg-dark">
-          <img src="" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title"><a href="nosy-nostrich-club/index.html" class="text-light">Nosy Nostrich Club</a></h5>
-            <p class="card-text">nostr product review club to understand and improve design</p>
-          </div>
-          <div class="card-footer text-center">
-          </div>
-        </div>
-        <!--- end nosy nostriches review club --->
-        <!--- open design library --->
-        <div class="card bg-dark">
-          <img src="" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title"><a href="boom-open-design-library/index.html" class="text-light">Boom</a></h5>
-            <p class="card-text">open design library with UI/UX resources for nostr product makers</p>
-          </div>
-          <div class="card-footer text-center">
-          </div>
-        </div>
-        <!--- end open design library --->
-      </div>
+</div>
+<hr class="w3-border-dark-grey">
+
+<!-- what is nostr -->
+<div class="w3-container w3-text-white" style="padding:128px 16px" id="nostr">
+  <!--- censorship resistance --->
+  <div class="w3-row-padding">
+    <div class="w3-col m2 w3-text-black">.</div>
+    <div class="w3-col m10 l8">
+      <h2>Nostr is social media turned on its head</h2>
+      <p class="w3-xlarge">Your thoughts cannot be cancelled. No one can close down your account. You are in control of your nostr.</p>
+      <h3 class="w3-xlarge n-text-purple">Nostr is censorship resistant.</h3>
     </div>
+    <div class="w3-col m2 w3-text-black">.</div>
+    <!--- future pic
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="" alt="" width="700" height="394">
+    </div>
+    --->
   </div>
-  <!--- end content --->
-  <!---footer--->
-  <div class="container-fluid bg-dark border-top mt-5 pt-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">
-          <h2>nostr-ings</h2>
-          <h3>unleashing the nostrich within</h3>
-          <p>independent open design</p>
-          <a class="btn btn-light" href="https://discord.gg/bJrWFds6je" target="new" alt="Nostr-ings on discord">discord</a>
-          <a href="https://github.com/nostr-ings" class="btn btn-dark border-light" target="new">github</a>
-        </div>
-      </div>
+  <hr class="w3-border-dark-grey">
+    <!--- decentralization --->
+  <div class="w3-row-padding">
+    <div class="w3-col m2 w3-text-black">.</div>
+    <div class="w3-col m10 l8">
+      <p class="w3-xlarge">Posts are spread out unto cyberspace through servers, called <span class="n-text-purple">relays</span>. Anyone can run a relay. They don't belong to a single company. Your posts belong to you. But not just your posts, you also keep your follows, followers...</p>
+      <h3 class="w3-xlarge n-text-purple">Nostr is decentralized.</h3>
     </div>
+    <div class="w3-col m2 w3-text-black">.</div>
+    <!--- future pic
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="" alt="" width="700" height="394">
+    </div>
+    --->
   </div>
-    <div class="container mt-5 pt-5 pb-3">
-      <div class="row">
-        <div class="col">
-          <p class="text-center">Independent open design | <a href="https://donate.nostr-ings.com/" class="text-light" target="new">donate</a></p>
-          <p class="text-center">Built to be free with <a href="https://creativecommons.org/publicdomain/zero/1.0/" class="text-light" target="new">CC0 1.0</a></p>
-        </div>
+  <hr class="w3-border-dark-grey">
+    <!--- not your keys --->
+    <div class="w3-row-padding">
+      <div class="w3-col m2 w3-text-black">.</div>
+      <div class="w3-col m10 l8">
+        <p class="w3-xlarge">You don't need an email or a phone number to join. You get a special set of keys (long strings of numbers unique to you) and with them, you can enter most of the nostr universe.</p>
+        <h3 class="w3-xlarge n-text-purple">Not your keys, not your social media.</h3>
       </div>
+      <div class="w3-col m2 w3-text-black">.</div>
+      <!--- future pic
+      <div class="w3-col m6">
+        <img class="w3-image w3-round-large" src="" alt="" width="700" height="394">
+      </div>
+      --->
+  </div>
+  <hr class="w3-border-dark-grey">
+  <!--- clients --->
+  <div class="w3-row-padding">
+    <div class="w3-col m2 w3-text-black">.</div>
+    <div class="w3-col m10 l8">
+      <p class="w3-xlarge">Nostr is a protocol, which means many apps and websites (called clients) can run nostr to let you access your profile, posts, followers... Think of it like being able to enter both Facebook and Twitter, and have your identity in both of them, regardless of which one you use. <br>If you get blocked by Facebook, you can still login to Twitter and have everything there.</p>
+      <h3 class="w3-xlarge n-text-purple">Nostr is a protocol, not a platform.</h3>
     </div>
-  <!---end footer--->
+    <div class="w3-col m2 w3-text-black">.</div>
+    <!--- future pic
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="" alt="" width="700" height="394">
+    </div>
+    --->
+</div>
+<hr class="w3-border-dark-grey">
+<!--- one key --->
+<div class="w3-row-padding">
+  <div class="w3-col m2 w3-text-black">.</div>
+  <div class="w3-col m10 l8">
+    <p class="w3-xlarge">A universe of <span class="w3-n-text-purple">clients</span> is in the works now, reimagining creative expression.<br>Nostr is not just about your posts spread out on relays (servers), uncontrolled by a company. You can use the same keys to enter most nostr clients. No need for a new account. No need to repost to every client. Your nostr keys carry your identity and your history. You can have a favorite app or website, or try different ones for their unique features.</p>
+    <h3 class="w3-xlarge n-text-purple">One set of keys to the nostr universe</h3>
+  </div>
+  <div class="w3-col m2 w3-text-black">.</div>
+  <!--- future pic
+  <div class="w3-col m6">
+    <img class="w3-image w3-round-large" src="" alt="" width="700" height="394">
+  </div>
+  --->
+</div>
+<!--- one key --->
+<div class="w3-row-padding">
+  <div class="w3-col m2 w3-text-black">.</div>
+  <div class="w3-col m10 l8">
+    <p class="w3-xlarge">You get a public key (npub) and a secret or private key (nsec). No one can help you recover them, so please keep them in a Password Manager. If you want to use nostr in nostr websites, keep your nsec safer with <a href="https://github.com/nostr-protocol/nips/blob/master/07.md" target="new">a browser extension.</a><br><a href="newbie-nostriches/how-2-guides/nostering-in-5-steps/index.html" alt="nostering in 5 steps">Learn how to nostr in 5 steps</a>.</p>
+    <h3 class="w3-xlarge n-text-purple">Your keys are yours only, keep them safe</h3>
+  </div>
+  <div class="w3-col m2 w3-text-black">.</div>
+  <!--- future pic
+  <div class="w3-col m6">
+    <img class="w3-image w3-round-large" src="" alt="" width="700" height="394">
+  </div>
+  --->
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <div class="w3-medium w3-section">
+    <h2>nostr-ings</h2>
+    <p>unleashing the nostrich within</p>
+  </div>
+  <div class="w3-xlarge w3-section w3-padding">
+    <p class="w3-medium npub">nostr:<br>npub1a7n2h5y3gt90y00mwrknhx74fyzzjqw25ehkscje58x9tfyhqd5snyvfnu</p>
+  </div>
+  <div class="w3-xlarge w3-section">
+    <a href="https://github.com/nostr-ings" class="w3-button w3-black" target="new"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a class="w3-button w3-black" href="https://discord.gg/bJrWFds6je" target="new" alt="Nostr-ings on discord">discord</a>
+  </div>
+
+  <p class="w3-medium">Independent open design | <a href="https://donate.nostr-ings.com/" class="text-light" target="new">donate</a></p>
+  <p class="w3-medium">Built to be free with <a href="https://creativecommons.org/publicdomain/zero/1.0/" class="text-light" target="new">CC0 1.0</a></p>
+  <br><br>
+  <a href="#home" class="w3-button w3-black"><i class="fa fa-arrow-up w3-margin-right"></i>Back to the beginning</a>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
 </body>
 </html>
