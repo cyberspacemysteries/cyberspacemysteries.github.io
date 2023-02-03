@@ -31,6 +31,12 @@ body, html {
   background-image: url("../images/about/nostr-ings-background.png");
   min-height: 100%;
 }
+.bgimg-2 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/about/nostr-ings-background.png");
+  min-height: 20%;
+}
 .n-padding-top {
   padding-top: 10%;
 }
