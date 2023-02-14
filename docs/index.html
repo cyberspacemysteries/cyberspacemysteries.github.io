@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="../../css/custom.css" />
+<link rel="stylesheet" type="text/css" href="../css/custom.css" />
 <!--- open graph --->
 <meta property="og:title" content="nostr-ings open design community" />
 <meta property="og:type" content="article" />
@@ -20,33 +20,35 @@
 <!--- end open graph --->
 </head>
 <body class="w3-black">
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card" id="myNavbar">
-    <a href="../index.html" class="w3-bar-item w3-button w3-wide w3-hover-black">nostr-ings</a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="../../index.html#nostr" class="w3-bar-item w3-button w3-hover-purple">why nostr</a>
-      <a href="../../newbie-nostriches/index.html" class="w3-bar-item w3-button w3-hover-purple">how-to</a>
-      <a href="../../nostr-universe/index.html" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-th"></i>&nbsp;&nbsp;discover</a>
-      <a href="https://donate.nostr-ings.com" target="new" alt="donate with BTCPayServer" class="w3-bar-item w3-button w3-hover-amber"><i class="fa fa-bolt"></i>&nbsp;&nbsp;donate</a>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card" id="myNavbar">
+      <a href="../index.html" class="w3-bar-item w3-button w3-wide w3-hover-black">nostr-ings</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="../newbie-nostriches/index.html" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-question"></i>&nbsp;&nbsp;how-to</a>
+        <a href="../nostr-universe/index.html" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-th"></i>&nbsp;&nbsp;discover</a>
+        <a href="#home" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-file-o"></i>&nbsp;&nbsp;docs</a>
+        <a href="https://donate.nostr-ings.com" target="new" alt="donate with BTCPayServer" class="w3-bar-item w3-button w3-hover-amber"><i class="fa fa-bolt"></i>&nbsp;&nbsp;donate</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-purple w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-purple w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
   </div>
-</div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple w3-large w3-padding-16">Close ×</a>
-  <a href="../../index.html#nostr" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple">why nostr</a>
-  <a href="../../newbie-nostriches/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple">how-to</a>
-  <a href="../../nostr-universe/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple">discover</a>
-  <a href="https://donate.nostr-ings.com" target="new" alt="donate with BTCPayServer" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-amber">donate</a>
-</nav>
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple w3-large w3-padding-16">Close ×</a>
+    <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-home"></i>&nbsp;&nbsp;nostr-ings</a>
+    <a href="../newbie-nostriches/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-question"></i>&nbsp;&nbsp;how-to</a>
+    <a href="../nostr-universe/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-th"></i>&nbsp;&nbsp;discover</a>
+    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-file-o"></i>&nbsp;&nbsp;docs</a>
+    <a href="https://donate.nostr-ings.com" target="new" alt="donate with BTCPayServer" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-amber"><i class="fa fa-bolt"></i>&nbsp;&nbsp;donate</a>
+  </nav>
+
 
 <!-- Header with full-height image -->
 <header class="bgimg-2 w3-display-container w3-padding-top-64" id="home">
@@ -65,7 +67,7 @@
   <div class="w3-row-padding w3-padding-16 w3-center" id="nips">
 <!---nip 04 --->
     <div class="w3-quarter">
-      <img src="../../images/nostr-implementation-possibilities/nip04.png" alt="nip01" style="width:100%" class="w3-border">
+      <img src="../images/nostr-implementation-possibilities/nip04.png" alt="nip01" style="width:100%" class="w3-border">
       <h3>NIP04</h3>
       <p>encrypted messages*</p>
       <a href="https://github.com/nostr-protocol/nips/blob/master/04.md" target="new" alt="nip01 from nostr protocol" class="w3-btn w3-block w3-round w3-black w3-border w3-hover-purple">rabbit hole</a>
@@ -73,7 +75,7 @@
     </div>
 <!---nip 03 --->
     <div class="w3-quarter">
-      <img src="../../images/nostr-implementation-possibilities/nip03.png" alt="nip01" style="width:100%" class="w3-border">
+      <img src="../images/nostr-implementation-possibilities/nip03.png" alt="nip01" style="width:100%" class="w3-border">
       <h3>NIP03</h3>
       <p>open time stamps</p>
       <a href="https://github.com/nostr-protocol/nips/blob/master/03.md" target="new" alt="nip01 from nostr protocol" class="w3-btn w3-block w3-round w3-black w3-border w3-hover-purple">rabbit hole</a>
@@ -81,7 +83,7 @@
     </div>
 <!---nip 02 --->
     <div class="w3-quarter">
-      <img src="../../images/nostr-implementation-possibilities/nip02.png" alt="nip01" style="width:100%" class="w3-border">
+      <img src="../images/nostr-implementation-possibilities/nip02.png" alt="nip01" style="width:100%" class="w3-border">
       <h3>NIP02</h3>
       <p>handles and contact list</p>
       <a href="https://github.com/nostr-protocol/nips/blob/master/02.md" target="new" alt="nip01 from nostr protocol" class="w3-btn w3-block w3-round w3-black w3-border w3-hover-purple">rabbit hole</a>
@@ -89,7 +91,7 @@
     </div>
 <!---nip 01 --->
     <div class="w3-quarter">
-      <img src="../../images/nostr-implementation-possibilities/nip01.png" alt="nip01" style="width:100%" class="w3-border">
+      <img src="../images/nostr-implementation-possibilities/nip01.png" alt="nip01" style="width:100%" class="w3-border">
       <h3>NIP01</h3>
       <p>basic protocol flow</p>
       <a href="https://github.com/nostr-protocol/nips/blob/master/01.md" target="new" alt="nip01 from nostr protocol" class="w3-btn w3-block w3-round w3-black w3-border w3-hover-purple">rabbit hole</a>
