@@ -20,43 +20,277 @@
 <!--- end open graph --->
 </head>
 <body class="w3-black">
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card" id="myNavbar">
-    <a href="../index.html" class="w3-bar-item w3-button w3-wide w3-hover-black">nostr-ings</a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="../index.html#nostr" class="w3-bar-item w3-button w3-hover-purple">why nostr</a>
-      <a href="../newbie-nostriches/index.html" class="w3-bar-item w3-button w3-hover-purple">how-to</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-th"></i>&nbsp;&nbsp;discover</a>
-      <a href="https://donate.nostr-ings.com" target="new" alt="donate with BTCPayServer" class="w3-bar-item w3-button w3-hover-amber"><i class="fa fa-bolt"></i>&nbsp;&nbsp;donate</a>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card" id="myNavbar">
+      <a href="../index.html" class="w3-bar-item w3-button w3-wide w3-hover-black">nostr-ings</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="../newbie-nostriches/index.html" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-question"></i>&nbsp;&nbsp;how-to</a>
+        <a href="#home" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-th"></i>&nbsp;&nbsp;discover</a>
+        <a href="../docs/index.html" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-file-o"></i>&nbsp;&nbsp;docs</a>
+        <a href="https://donate.nostr-ings.com" target="new" alt="donate with BTCPayServer" class="w3-bar-item w3-button w3-hover-amber"><i class="fa fa-bolt"></i>&nbsp;&nbsp;donate</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-purple w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-purple w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
   </div>
-</div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple w3-large w3-padding-16">Close ×</a>
-  <a href="#nostr" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple">why nostr</a>
-  <a href="newbie-nostriches/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple">how-to</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple">discover</a>
-  <a href="https://donate.nostr-ings.com" target="new" alt="donate with BTCPayServer" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-amber">donate</a>
-</nav>
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple w3-large w3-padding-16">Close ×</a>
+    <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-home"></i>&nbsp;&nbsp;nostr-ings</a>
+    <a href="../newbie-nostriches/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-question"></i>&nbsp;&nbsp;how-to</a>
+    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-th"></i>&nbsp;&nbsp;discover</a>
+    <a href="../docs/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-file-o"></i>&nbsp;&nbsp;docs</a>
+    <a href="https://donate.nostr-ings.com" target="new" alt="donate with BTCPayServer" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-amber"><i class="fa fa-bolt"></i>&nbsp;&nbsp;donate</a>
+  </nav>
 
 <!-- Header with full-height image -->
 <header class="bgimg-2 w3-display-container w3-black w3-padding-top-64" id="home">
   <div class="w3-center w3-text-white w3-padding">
-    <h1 class="w3-xxlarge">a glimpse at the nostr universe</h1>
-    <a href="../docs/nostr-implementation-possibilities/index.html" class="w3-button w3-black w3-border w3-padding-large w3-large w3-margin-top w3-hover-white w3-round-xxlarge" alt="Nostr guide for newbie nostriches">docs</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#discover" class="w3-button w3-purple w3-hover-white w3-border w3-padding-large w3-large w3-margin-top w3-hover-purple w3-round-xxlarge">discover</a>
+    <h1 class="w3-xxlarge">discover the nostr universe</h1>
   </div>
 </header>
 <hr class="w3-border-dark-grey">
-<!-- Page Container -->
+<!-- Nostr client Section -->
+  <div class="w3-container w3-padding-32" id="menu">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">clients running on nostr</h3>
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Web');" id="myLink">
+        <div class="w3-col s2 tablink"><i class="fa fa-globe fa-fw w3-margin-right w3-large w3-text-white "></i>&nbsp;&nbsp;Web</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Android');">
+        <div class="w3-col s2 tablink"><i class="fa fa-android fa-fw w3-margin-right w3-large w3-text-white "></i>&nbsp;&nbsp;Android</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Apple');">
+        <div class="w3-col s2 tablink"><i class="fa fa-apple fa-fw w3-margin-right w3-large w3-text-white "></i>&nbsp;&nbsp;Apple iOS</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Desktop');">
+        <div class="w3-col s2 tablink"><i class="fa fa-desktop fa-fw w3-margin-right w3-large w3-text-white "></i>&nbsp;&nbsp;Desktop</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'CommandLine');">
+        <div class="w3-col s2 tablink"><i class="fa fa-code fa-fw w3-margin-right w3-large w3-text-white "></i>&nbsp;Command Line</div>
+      </a>
+    </div>
+  </div>
+<!-- Web client Section -->
+<div class="w3-container w3-padding-32 menu" id="Web">
+<!--- row 1 --->
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container w3-border">
+        <a href="astral-ninja/index.html" alt="astral ninja product page" class="w3-hover-opacity">
+        <div class="w3-display-bottomright w3-purple w3-padding">astral.ninja</div>
+        <img src="../images/nostr-universe/nostr-client-astral-ninja.png" alt="astral.ninja" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container w3-border">
+        <a href="blockcore-notes/index.html" alt="blockcore notes product page" class="w3-hover-opacity">
+        <div class="w3-display-bottomright w3-purple w3-padding">blockcore notes</div>
+        <img src="../images/nostr-universe/nostr-client-blockcore-notes.png" alt="astral.ninja" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container w3-border">
+        <a href="blogstack/index.html" alt="blogstack product page" class="w3-hover-opacity">
+        <div class="w3-display-bottomright w3-purple w3-padding">blogstack</div>
+        <img src="../images/nostr-universe/nostr-client-blogstack.png" alt="astral.ninja" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container w3-border">
+        <a href="coracle-social/index.html" alt="coracle.social product page" class="w3-hover-opacity">
+        <div class="w3-display-bottomright w3-purple w3-padding">coracle.social</div>
+        <img src="../images/nostr-universe/nostr-client-coracle-social.png" alt="coracle.social" style="width:100%"></a>
+      </div>
+    </div>
+<!--- end row 1 --->
+  </div>
+<!--- row 2 --->
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container w3-border">
+        <a href="emon-chat/index.html" alt="emon.chat product page" class="w3-hover-opacity">
+        <div class="w3-display-bottomright w3-purple w3-padding">emon.chat</div>
+        <img src="../images/nostr-universe/nostr-client-emon-chat.png" alt="emon.chat" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container w3-border">
+        <a href="iris-to/index.html" alt="iris.to product page" class="w3-hover-opacity">
+        <div class="w3-display-bottomright w3-purple w3-padding">iris.to</div>
+        <img src="../images/nostr-universe/nostr-client-iris-to.png" alt="iris.to" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container w3-border">
+        <a href="jester/index.html" alt="jester chess product page" class="w3-hover-opacity">
+        <div class="w3-display-bottomright w3-purple w3-padding">jester</div>
+        <img src="../images/nostr-universe/nostr-client-jester.png" alt="jester" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container w3-border">
+        <a href="member-cash/index.html" alt="member.cash product page" class="w3-hover-opacity">
+        <div class="w3-display-bottomright w3-purple w3-padding">member.cash</div>
+        <img src="../images/nostr-universe/nostr-client-member-cash.png" alt="member.cash" style="width:100%"></a>
+      </div>
+    </div>
+<!--- end Row 2 --->
+</div>
+<!--- row 3 --->
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container w3-border">
+        <a href="nostrgram/index.html" alt="nostrgram product page" class="w3-hover-opacity">
+        <div class="w3-display-bottomright w3-purple w3-padding">nostrgram</div>
+        <img src="../images/nostr-universe/nostr-client-nostrgram.png" alt="nostrgram" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container w3-border">
+        <a href="notebin/index.html" alt="notebin product page" class="w3-hover-opacity">
+        <div class="w3-display-bottomright w3-purple w3-padding">notebin</div>
+        <img src="../images/nostr-universe/nostr-client-notebin.png" alt="notebin" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container w3-border">
+        <a href="nvote/index.html" alt="nvote chess product page" class="w3-hover-opacity">
+        <div class="w3-display-bottomright w3-purple w3-padding">nvote</div>
+        <img src="../images/nostr-universe/nostr-client-nvote.png" alt="nvote" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container w3-border">
+        <a href="rsslay/index.html" alt="rsslay product page" class="w3-hover-opacity">
+        <div class="w3-display-bottomright w3-purple w3-padding">rsslay</div>
+        <img src="../images/nostr-universe/nostr-client-rsslay.png" alt="rsslay" style="width:100%"></a>
+      </div>
+    </div>
+<!--- end Row 3 --->
+</div>
+<!--- row 4 --->
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container w3-border">
+        <a href="sendstr/index.html" alt="sendstr product page" class="w3-hover-opacity">
+        <div class="w3-display-bottomright w3-purple w3-padding">sendstr</div>
+        <img src="../images/nostr-universe/nostr-client-sendstr.png" alt="sendstr" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container w3-border">
+        <a href="snort-social/index.html" alt="snort.social product page" class="w3-hover-opacity">
+        <div class="w3-display-bottomright w3-purple w3-padding">snort.social</div>
+        <img src="../images/nostr-universe/nostr-client-snort-social.png" alt="snort.social" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container w3-border">
+        <a href="postr/index.html" alt="write nostr product page" class="w3-hover-opacity">
+        <div class="w3-display-bottomright w3-purple w3-padding">postr</div>
+        <img src="../images/nostr-universe/nostr-client-write-nostr.png" alt="write nostr" style="width:100%"></a>
+      </div>
+    </div>
+<!--- end Row 4 --->
+  </div>
+<!--- end Web Client --->
+</div>
+<!-- android client Section -->
+<div class="w3-container w3-padding-32 menu" id="Android">
+<!--- row 1 --->
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container w3-border">
+        <a href="amethyst/index.html" alt="amethyst product page" class="w3-hover-opacity">
+        <div class="w3-display-bottomright w3-purple w3-padding">amethyst</div>
+        <img src="../images/about/placeholder-nostr-clients.png" alt="amethyst" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container w3-border">
+        <a href="the-arc-app/index.html" alt="the arc app product page" class="w3-hover-opacity">
+        <div class="w3-display-bottomright w3-purple w3-padding">the arc app</div>
+        <img src="../images/about/placeholder-nostr-clients.png" alt="the arc app" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container w3-border">
+        <a href="nostros/index.html" alt="nostros product page" class="w3-hover-opacity">
+        <div class="w3-display-bottomright w3-purple w3-padding">nostros</div>
+        <img src="../images/about/placeholder-nostr-clients.png" alt="nostros" style="width:100%"></a>
+      </div>
+    </div>
+<!--- end row 1 --->
+  </div>
+<!--- row 2 --->
+  <div class="w3-row-padding">
+<!--- end Row 2 --->
+</div>
+</div>
+<!--- end android Client --->
+<!-- Apple client Section -->
+<div class="w3-container w3-padding-32 menu" id="Apple">
+<!--- row 1 --->
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container w3-border">
+        <a href="the-arc-app/index.html" alt="the arc app product page" class="w3-hover-opacity">
+        <div class="w3-display-bottomright w3-purple w3-padding">the arc app</div>
+        <img src="../images/about/placeholder-nostr-clients.png" alt="the arc app" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container w3-border">
+        <a href="daisy/index.html" alt="daisy product page" class="w3-hover-opacity">
+        <div class="w3-display-bottomright w3-purple w3-padding">daisy</div>
+        <img src="../images/about/placeholder-nostr-clients.png" alt="daisy" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container w3-border">
+        <a href="damus/index.html" alt="damus product page" class="w3-hover-opacity">
+        <div class="w3-display-bottomright w3-purple w3-padding">damus</div>
+        <img src="../images/about/placeholder-nostr-clients.png" alt="damus" style="width:100%"></a>
+      </div>
+    </div>
+
+    </div>
+<!--- end row 1 --->
+  </div>
+<!--- row 2 --->
+  <div class="w3-row-padding">
+
+<!--- end Row 2 --->
+</div>
+</div>
+<!--- end apple Client --->
+<!-- desktop or command line Section -->
+<div class="w3-container w3-padding-32 menu" id="Desktop">
+<!--- row 1 --->
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container w3-border">
+        <a href="bija/index.html" alt="bija product page" class="w3-hover-opacity">
+        <div class="w3-display-bottomright w3-purple w3-padding">bija</div>
+        <img src="../images/about/placeholder-nostr-clients.png" alt="bija" style="width:100%"></a>
+      </div>
+    </div>
+<!--- end row 1 --->
+  </div>
+<!--- row 2 --->
+  <div class="w3-row-padding">
+<!--- end Row 2 --->
+</div>
+</div>
+<!--- end desktop/command line Client --->
+<!-- Table Container -->
 <div class="w3-content w3-black w3-margin-top" style="max-width:1400px;" id="discover">
 <br>
 <h2 class="w3-xlarge w3-padding">products running the nostr protocol (clients)</h2>
@@ -65,10 +299,15 @@
   <div class="w3-responsive w3-black">
    <table class="w3-table-all">
      <tr class="w3-black">
-       <th>clients</th>
-       <th>android</th>
-       <th>iOS</th>
-       <th>web</th>
+       <th class="w3-center">clients</th>
+       <th class="w3-center">android</th>
+       <th class="w3-center">iOS</th>
+       <th class="w3-center">web</th>
+       <th class="w3-center">desktop</th>
+       <th class="w3-center">command line</th>
+       <th>NIP-65</th>
+       <th class="w3-center">NIP-57</th>
+       <th>NIP-56</th>
        <th>NIP-50</th>
        <th>NIP-42</th>
        <th>NIP-40</th>
@@ -107,11 +346,14 @@
        <td class="w3-blue-grey w3-border-right"><i class="fa fa-apple fa-fw w3-margin-right w3-xlarge w3-text-white"></i></td>
        <!---  web ---->
        <td class="w3-blue-grey w3-border-right"><i class="fa fa-globe fa-fw w3-margin-right w3-xlarge w3-text-white"></i></td>
-       <!--- NIP-50 --->
+       <!---  desktop ---->
+       <td class="w3-blue-grey w3-border-right"><i class="fa fa-desktop fa-fw w3-margin-right w3-xlarge w3-text-white"></i></td>
+       <!---  desktop ---->
+       <td class="w3-blue-grey w3-border-right"><i class="fa fa-code fa-fw w3-margin-right w3-xlarge w3-text-white"></i></td>
+       <!--- NIP-65 --->
        <td class="w3-black"></td>
-       <!--- NIP-42 --->
-       <td class="w3-black"></td>
-     </tr>
+       <!--- NIP-57 --->
+       <td class="w3-blue-grey w3-border-right"><i class="fa fa-bolt fa-fw w3-margin-right w3-xlarge w3-text-white"></i></td>
      <!--- amethyst --->
      <tr>
        <td class="w3-purple w3-border-right"><a href="amethyst/index.html">amethyst</a></td>
@@ -120,6 +362,10 @@
        <!---  ios ---->
        <td class="w3-black"></td>
        <!---  web ---->
+       <td class="w3-black"></td>
+       <!---  desktop ---->
+       <td class="w3-black"></td>
+       <!---  command line ---->
        <td class="w3-black"></td>
        <!--- NIP-50 --->
        <td class="w3-black"></td>
@@ -141,7 +387,13 @@
      </tr>
      <!--- astral.ninja --->
      <tr>
-       <td class="w3-purple"><a href="astral-ninja/index.html">astral.ninja</a></td>
+       <td class="w3-purple w3-border-right"><a href="astral-ninja/index.html">astral.ninja</a></td>
+       <!--- android --->
+       <td class="w3-black"></td>
+       <!--- iOS --->
+       <td class="w3-black"></td>
+       <!---  web ---->
+       <td class="w3-purple w3-border-right w3-border-left"><i class="fa fa-globe fa-fw w3-margin-right w3-xlarge w3-text-white "></i></td>
        <!--- NIP-50 --->
        <td class="w3-black"></td>
        <!--- NIP-42 --->
@@ -150,6 +402,14 @@
      <!--- bija --->
      <tr>
        <td class="w3-deep-purple"><a href="bija/index.html">bija</a></td>
+       <!--- android --->
+       <td class="w3-black"></td>
+       <!--- iOS --->
+       <td class="w3-black"></td>
+       <!--- web --->
+       <td class="w3-black"></td>
+       <!---  desktop ---->
+       <td class="w3-deep-purple w3-border-right w3-border-left"><i class="fa fa-desktop fa-fw w3-margin-right w3-xlarge w3-text-white "></i></td>
        <!--- NIP-50 --->
        <td class="w3-black"></td>
        <!--- NIP-42 --->
@@ -158,6 +418,12 @@
      <!--- blockcore notes --->
      <tr>
        <td class="w3-purple"><a href="blockcore-notes/index.html">blockcore notes</a></td>
+       <!--- android --->
+       <td class="w3-black"></td>
+       <!--- iOS --->
+       <td class="w3-black"></td>
+       <!---  web ---->
+       <td class="w3-purple w3-border-right w3-border-left"><i class="fa fa-globe fa-fw w3-margin-right w3-xlarge w3-text-white "></i></td>
        <!--- NIP-50 --->
        <td class="w3-black"></td>
        <!--- NIP-42 --->
@@ -262,7 +528,7 @@
    </table>
   </div>
   <p><a href="https://github.com/nostr-protocol/nips" target="new" alt="NIPS on the Nostr-protocol GitHub">About nostr NIPs on the nostr protocol GitHub</a></p>
-  <!--- End page container --->
+  <!--- End table container --->
 </div>
 <!-- Footer -->
   <footer class="w3-container w3-padding-64 w3-black">
@@ -315,6 +581,23 @@ function w3_open() {
 function w3_close() {
     mySidebar.style.display = "none";
 }
+</script>
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-purple", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-purple";
+}
+document.getElementById("myLink").click();
 </script>
 
 </body>
