@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="../css/custom.css" />
 <!--- open graph --->
 <meta property="og:title" content="nostr-ings open design community" />
@@ -53,12 +55,15 @@
 <header class="bgimg-2 w3-display-container w3-black w3-padding-top-64" id="home">
   <div class="w3-center w3-text-white w3-padding">
     <h1 class="w3-xxlarge">discover the nostr universe</h1>
+    <a href="#bydevice" class="w3-button w3-purple w3-border w3-padding-large w3-large w3-margin-top w3-hover-white w3-round-xxlarge">by device</a>
+    <a href="#byfeature" class="w3-button w3-black w3-border w3-padding-large w3-large w3-margin-top w3-hover-white w3-round-xxlarge">by feature</a>
   </div>
 </header>
 <hr class="w3-border-dark-grey">
 <!-- Nostr client Section -->
+<span id="bydevice"></span>
   <div class="w3-container w3-padding-32" id="menu">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">clients running on nostr</h3>
+    <h3 class="w3-text-light-grey w3-xlarge w3-margin-top-32 w3-padding">Nostr clients by device</h3>
     <div class="w3-row w3-center w3-card w3-padding">
       <a href="javascript:void(0)" onclick="openMenu(event, 'Web');" id="myLink">
         <div class="w3-col s2 tablink"><i class="fa fa-globe fa-fw w3-margin-right w3-large w3-text-white "></i>&nbsp;&nbsp;Web</div>
@@ -291,231 +296,2867 @@
 </div>
 <!--- end desktop/command line Client --->
 <!-- Table Container -->
-<div class="w3-content w3-black w3-margin-top" style="max-width:1400px;" id="discover">
+<div class="w3-content w3-black w3-margin-top-32 w3-padding" style="max-width:1400px;" id="byfeature">
 <br>
-<h2 class="w3-xlarge w3-padding">products running the nostr protocol (clients)</h2>
+<h2 class="w3-xlarge w3-padding">Nostr clients by feature</h2>
   <!-- discover -->
   <div class="w3-container w3-text-white">
   <div class="w3-responsive w3-black">
    <table class="w3-table-all">
      <tr class="w3-black">
+        <!--- clients --->
        <th class="w3-center">clients</th>
+       <!--- android --->
        <th class="w3-center">android</th>
+       <!--- iOS --->
        <th class="w3-center">iOS</th>
+       <!--- web --->
        <th class="w3-center">web</th>
+       <!--- desktop --->
        <th class="w3-center">desktop</th>
+       <!--- command line --->
        <th class="w3-center">command line</th>
+       <!--- NIP 78 --->
+       <th>NIP-78</th>
+       <!--- NIP 65 --->
        <th>NIP-65</th>
-       <th class="w3-center">NIP-57</th>
+       <!--- NIP 58 --->
+       <th>NIP-58</th>
+       <!--- NIP 57 --->
+       <th>NIP-57</th>
+       <!--- NIP 56 --->
        <th>NIP-56</th>
+       <!--- NIP 50 --->
        <th>NIP-50</th>
+       <!--- NIP 46 --->
+       <th>NIP-46</th>
+       <!--- NIP 42 --->
        <th>NIP-42</th>
+       <!--- NIP 40 --->
        <th>NIP-40</th>
+       <!--- NIP 36 --->
        <th>NIP-36</th>
+       <!--- NIP 33 --->
        <th>NIP-33</th>
+       <!--- NIP 28 --->
        <th>NIP-28</th>
+       <!--- NIP 26 --->
        <th>NIP-26</th>
+       <!--- NIP 25 --->
        <th>NIP-25</th>
+       <!--- NIP 23 --->
+       <th>NIP-23</th>
+       <!--- NIP 22 --->
        <th>NIP-22</th>
+       <!--- NIP 21 --->
        <th>NIP-21</th>
+       <!--- NIP 20 --->
        <th>NIP-20</th>
+       <!--- NIP 19 --->
        <th>NIP-19</th>
+       <!--- NIP 16 --->
        <th>NIP-16</th>
+       <!--- NIP 15 --->
        <th>NIP-15</th>
+       <!--- NIP 14 --->
        <th>NIP-14</th>
+       <!--- NIP 13 --->
        <th>NIP-13</th>
+       <!--- NIP 12 --->
        <th>NIP-12</th>
+       <!--- NIP 11 --->
        <th>NIP-11</th>
+       <!--- NIP 10 --->
        <th>NIP-10</th>
+       <!--- NIP 09 --->
        <th>NIP-09</th>
+       <!--- NIP 08 --->
        <th>NIP-08</th>
+       <!--- NIP 07 --->
        <th>NIP-07</th>
+       <!--- NIP 06 --->
        <th>NIP-06</th>
+       <!--- NIP 05 --->
        <th>NIP-05</th>
+       <!--- NIP 04 --->
        <th>NIP-04</th>
+       <!--- NIP 03 --->
        <th>NIP-03</th>
+       <!--- NIP 01 --->
        <th>NIP-02</th>
+       <!--- NIP 01 --->
        <th>NIP-01</th>
      </tr>
      <!--- Row 1 what is this NIP --->
      <tr>
-       <td class="w3-blue-grey w3-border-right"><a href="../docs/nostr-implementation-possibilities/index.html" alt="information on nips">what is this feature?</a></td>
+       <td class="w3-black w3-border-right"><a href="../docs/nostr-implementation-possibilities/index.html" alt="information on nips">what is this feature?</a></td>
        <!---  android ---->
-       <td class="w3-blue-grey w3-border-right"><i class="fa fa-android fa-fw w3-margin-right w3-xlarge w3-text-white"></i></td>
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">android</span></td>
        <!---  ios ---->
-       <td class="w3-blue-grey w3-border-right"><i class="fa fa-apple fa-fw w3-margin-right w3-xlarge w3-text-white"></i></td>
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><i class="fa fa-apple"></i></td>
        <!---  web ---->
-       <td class="w3-blue-grey w3-border-right"><i class="fa fa-globe fa-fw w3-margin-right w3-xlarge w3-text-white"></i></td>
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">language</span></td>
        <!---  desktop ---->
-       <td class="w3-blue-grey w3-border-right"><i class="fa fa-desktop fa-fw w3-margin-right w3-xlarge w3-text-white"></i></td>
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">desktop_windows</span></td>
        <!---  desktop ---->
-       <td class="w3-blue-grey w3-border-right"><i class="fa fa-code fa-fw w3-margin-right w3-xlarge w3-text-white"></i></td>
-       <!--- NIP-65 --->
-       <td class="w3-black"></td>
-       <!--- NIP-57 --->
-       <td class="w3-blue-grey w3-border-right"><i class="fa fa-bolt fa-fw w3-margin-right w3-xlarge w3-text-white"></i></td>
-     <!--- amethyst --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">code</span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">folder_special</span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">list</span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">stars</span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">bolt</span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">report</span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">search</span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">cable</span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large">AUTH</td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">schedule</span><span class="material-icons-outlined">delete</span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">warning</span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">published_with_changes</span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">question_answer</span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">key</span><span class="material-icons-outlined">edit</span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">favorite</span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">edit_note</span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">schedule</span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large">nostr:</td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">check_box</span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large">bech32</td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large">events</td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large">EOSE</td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large">subject</td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large">PoW</td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">tag</span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">storage</span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">reply</span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">delete</span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">alternate_email</span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">open_in_browser</span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large">BIP39, BIP32</td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">verified</span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">mark_email_unread</span><span class="material-icons-outlined">lock</span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">schedule</span></td>
+       <!--- NIP 02 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">alternate_email</span><span class="material-icons-outlined">contact_mail</span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
      <tr>
+       <!--- amethyst --->
        <td class="w3-purple w3-border-right"><a href="amethyst/index.html">amethyst</a></td>
        <!---  android ---->
-       <td class="w3-purple w3-border-right"><i class="fa fa-android fa-fw w3-margin-right w3-xlarge w3-text-white"></i></td>
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">android</span></td>
        <!---  ios ---->
-       <td class="w3-black"></td>
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
        <!---  web ---->
-       <td class="w3-black"></td>
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
        <!---  desktop ---->
-       <td class="w3-black"></td>
-       <!---  command line ---->
-       <td class="w3-black"></td>
-       <!--- NIP-50 --->
-       <td class="w3-black"></td>
-       <!--- NIP-42 --->
-       <td class="w3-black"></td>
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">bolt</span></td>
+       <!--- NIP 56 --->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">report</span></td>
+       <!--- NIP 50 --->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">search</span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">published_with_changes</span></td>
+       <!--- NIP 28 --->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">question_answer</span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">favorite</span></td>
+       <!--- NIP 23 --->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">edit_note</span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-purple w3-border-right w3-large">nostr:</td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-purple w3-border-right w3-large">bech32</td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-purple w3-border-right w3-large">EOSE</td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">reply</span></td>
+       <!--- NIP 09 --->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">delete</span></td>
+       <!--- NIP 08 --->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">alternate_email</span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">verified</span></td>
+       <!--- NIP 04 --->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">mark_email_unread</span><span class="material-icons-outlined">lock</span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 02 --->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">alternate_email</span><span class="material-icons-outlined">contact_mail</span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
      </tr>
      <!--- the arc app --->
      <tr>
        <td class="w3-deep-purple w3-border-right"><a href="the-arc-app/index.html">the arc app</a></td>
        <!---  android ---->
-       <td class="w3-deep-purple w3-border-right"><i class="fa fa-android fa-fw w3-margin-right w3-xlarge w3-text-white"></i></td>
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
        <!---  ios ---->
-       <td class="w3-deep-purple w3-border-right"><i class="fa fa-apple fa-fw w3-margin-right w3-xlarge w3-text-white"></i></td>
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
        <!---  web ---->
-       <!--- NIP-50 --->
-       <td class="w3-black"></td>
-       <!--- NIP-42 --->
-       <td class="w3-black"></td>
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
      </tr>
      <!--- astral.ninja --->
      <tr>
        <td class="w3-purple w3-border-right"><a href="astral-ninja/index.html">astral.ninja</a></td>
-       <!--- android --->
-       <td class="w3-black"></td>
-       <!--- iOS --->
-       <td class="w3-black"></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
        <!---  web ---->
-       <td class="w3-purple w3-border-right w3-border-left"><i class="fa fa-globe fa-fw w3-margin-right w3-xlarge w3-text-white "></i></td>
-       <!--- NIP-50 --->
-       <td class="w3-black"></td>
-       <!--- NIP-42 --->
-       <td class="w3-black"></td>
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
      </tr>
      <!--- bija --->
      <tr>
        <td class="w3-deep-purple"><a href="bija/index.html">bija</a></td>
-       <!--- android --->
-       <td class="w3-black"></td>
-       <!--- iOS --->
-       <td class="w3-black"></td>
-       <!--- web --->
-       <td class="w3-black"></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
        <!---  desktop ---->
-       <td class="w3-deep-purple w3-border-right w3-border-left"><i class="fa fa-desktop fa-fw w3-margin-right w3-xlarge w3-text-white "></i></td>
-       <!--- NIP-50 --->
-       <td class="w3-black"></td>
-       <!--- NIP-42 --->
-       <td class="w3-black"></td>
-     </tr>
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
+       </tr>
      <!--- blockcore notes --->
      <tr>
        <td class="w3-purple"><a href="blockcore-notes/index.html">blockcore notes</a></td>
-       <!--- android --->
-       <td class="w3-black"></td>
-       <!--- iOS --->
-       <td class="w3-black"></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
        <!---  web ---->
-       <td class="w3-purple w3-border-right w3-border-left"><i class="fa fa-globe fa-fw w3-margin-right w3-xlarge w3-text-white "></i></td>
-       <!--- NIP-50 --->
-       <td class="w3-black"></td>
-       <!--- NIP-42 --->
-       <td class="w3-black"></td>
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
+     </tr>
+     <!--- blockstack.io --->
+     <tr>
+       <td class="w3-deep-purple"><a href="blogstack/index.html">blogstack.io</a></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
+     </tr>
+     <!--- branle --->
+     <tr>
+       <td class="w3-purple"><a href="branle/index.html">branle</a></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
+     </tr>
+     <!--- coracle.social --->
+     <tr>
+       <td class="w3-deep-purple"><a href="coracle-social/index.html">coracle.social</a></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
      </tr>
      <!--- Daisy --->
      <tr>
-       <td class="w3-deep-purple"><a href="daisy/index.html">daisy</a></td>
-       <!--- NIP-50 --->
-       <td class="w3-black"></td>
-       <!--- NIP-42 --->
-       <td class="w3-black"></td>
+       <td class="w3-purple"><a href="daisy/index.html">daisy</a></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
      </tr>
      <!--- damus --->
      <tr>
-       <td class="w3-purple"><a href="damus/index.html">damus</a></td>
-       <!--- NIP-50 --->
-       <td class="w3-black"></td>
-       <!--- NIP-42 --->
-       <td class="w3-black"></td>
+       <td class="w3-deep-purple"><a href="damus/index.html">damus</a></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-deep-purple w3-border-right w3-xxlarge material-icons"><i class="fa fa-apple"></i></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-deep-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">bolt</span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-deep-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">search</span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-deep-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">favorite</span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-deep-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">schedule</span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-deep-purple w3-border-right w3-large">bech32</td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-deep-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">tag</span></td>
+       <!--- NIP 11 --->
+       <td class="w3-deep-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">storage</span></td>
+       <!--- NIP 10 --->
+       <td class="w3-deep-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">reply</span></td>
+       <!--- NIP 09 --->
+       <td class="w3-deep-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">delete</span></td>
+       <!--- NIP 08 --->
+       <td class="w3-deep-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">alternate_email</span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-deep-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">verified</span></td>
+       <!--- NIP 04 --->
+       <td class="w3-deep-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">mark_email_unread</span><span class="material-icons-outlined">lock</span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 02 --->
+       <td class="w3-deep-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">alternate_email</span><span class="material-icons-outlined">contact_mail</span></td>
+       <!--- NIP 01 --->
+        <td class="w3-deep-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
+     </tr>
+     <!--- emon.chat --->
+     <tr>
+       <td class="w3-purple"><a href="emon-chat/index.html">emon.chat</a></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
+     </tr>
+     <!--- futr --->
+     <tr>
+       <td class="w3-deep-purple"><a href="futr/index.html">futr</a></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 02 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
+     </tr>
+     <!--- gossip --->
+     <tr>
+       <td class="w3-purple w3-border-right"><a href="gossip/index.html">gossip</a></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">desktop_windows</span></td>
+       <!---  command line ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">list</span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-purple w3-border-right w3-large">AUTH</td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">key</span><span class="material-icons-outlined">edit</span></td>
+       <!--- NIP 25 --->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">favorite</span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">schedule</span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">check_box</span></td>
+       <!--- NIP 19 --->
+       <td class="w3-purple w3-border-right w3-large">bech32</td>
+       <!--- NIP 16 --->
+       <td class="w3-purple w3-border-right w3-large">events</td>
+       <!--- NIP 15 --->
+       <td class="w3-purple w3-border-right w3-large">EOSE</td>
+       <!--- NIP 14 --->
+       <td class="w3-purple w3-border-right w3-large">subject</td>
+       <!--- NIP 13 --->
+       <td class="w3-purple w3-border-right w3-large">PoW</td>
+       <!--- NIP 12 --->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">tag</span></td>
+       <!--- NIP 11 --->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">storage</span></td>
+       <!--- NIP 10 --->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">reply</span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">alternate_email</span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">verified</span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-purple w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">alternate_email</span><span class="material-icons-outlined">contact_mail</span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
      </tr>
      <!--- hamstr.io --->
      <tr>
        <td class="w3-deep-purple"><a href="hamstr-io/index.html">hamstr.io</a></td>
-       <!--- NIP-50 --->
-       <td class="w3-black"></td>
-       <!--- NIP-42 --->
-       <td class="w3-black"></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
      </tr>
      <!--- iris.to --->
      <tr>
        <td class="w3-purple"><a href="iris-to/index.html">iris.to</a></td>
-       <!--- NIP-50 --->
-       <td class="w3-black"></td>
-       <!--- NIP-42 --->
-       <td class="w3-black"></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
      </tr>
-     <!--- iris.to --->
+     <!--- jester --->
+     <tr>
+       <td class="w3-deep-purple"><a href="jester/index.html">jester</a></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
+     </tr>
+     <!--- loquaz --->
+     <tr>
+       <td class="w3-purple"><a href="loquaz/index.html">loquaz</a></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
+     </tr>
+     <!--- member.cash --->
+     <tr>
+       <td class="w3-deep-purple"><a href="member-cash/index.html">member.cash</a></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
+     </tr>
+     <!--- more speech --->
+     <tr>
+       <td class="w3-purple"><a href="more-speech/index.html">more-speech</a></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
+     </tr>
+     <!--- nostr.band --->
      <tr>
        <td class="w3-deep-purple"><a href="nostr-band/index.html">nostr.band</a></td>
-       <!--- NIP-50 --->
-       <td class="w3-black"></td>
-       <!--- NIP-42 --->
-       <td class="w3-black"></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
+     </tr>
+     <!--- noscl --->
+     <tr>
+       <td class="w3-purple"><a href="noscl/index.html">noscl</a></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
+     </tr>
+     <!--- nosky --->
+     <tr>
+       <td class="w3-deep-purple"><a href="nosky/index.html">nosky</a></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
+     </tr>
+     <!--- nostr bitejo --->
+     <tr>
+       <td class="w3-purple"><a href="nostr-bitejo/index.html">nostr.bitejo.com</a></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
+     </tr>
+     <!--- nostr ch --->
+     <tr>
+       <td class="w3-deep-purple"><a href="nostr-ch/index.html">nostr.ch</a></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
+     </tr>
+     <!--- nostr console --->
+     <tr>
+       <td class="w3-purple"><a href="nostr-console/index.html">nostr console</a></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
      </tr>
      <!--- nostrgram--->
      <tr>
-       <td class="w3-purple"><a href="nostrgram/index.html">nostrgram</a></td>
-       <!--- NIP-50 --->
-       <td class="w3-black"></td>
-       <!--- NIP-42 --->
-       <td class="w3-black"></td>
+       <td class="w3-deep-purple"><a href="nostrgram/index.html">nostrgram</a></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
+     </tr>
+     <!---  nostr nests --->
+     <tr>
+       <td class="w3-purple"><a href="nostr-nests/index.html">nostrnests.com</a></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
      </tr>
      <!--- nostrogen--->
      <tr>
        <td class="w3-deep-purple"><a href="nostrogen/index.html">nostrogen</a></td>
-       <!--- NIP-50 --->
-       <td class="w3-black"></td>
-       <!--- NIP-42 --->
-       <td class="w3-black"></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
      </tr>
      <!--- nostros--->
      <tr>
        <td class="w3-purple"><a href="nostros/index.html">nostros</a></td>
-       <!--- NIP-50 --->
-       <td class="w3-black"></td>
-       <!--- NIP-42 --->
-       <td class="w3-black"></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
      </tr>
      <!--- plasma--->
      <tr>
        <td class="w3-deep-purple"><a href="plasma/index.html">plasma</a></td>
-       <!--- NIP-50 --->
-       <td class="w3-black"></td>
-       <!--- NIP-42 --->
-       <td class="w3-black"></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
      </tr>
      <!--- rsslay--->
      <tr>
        <td class="w3-purple"><a href="rsslay/index.html">rsslay</a></td>
-       <!--- NIP-50 --->
-       <td class="w3-black"></td>
-       <!--- NIP-42 --->
-       <td class="w3-black"></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
      </tr>
      <!--- snort.social--->
      <tr>
        <td class="w3-deep-purple"><a href="snort-social/index.html">snort.social</a></td>
-       <!--- NIP-50 --->
-       <td class="w3-black"></td>
-       <!--- NIP-42 --->
-       <td class="w3-black"></td>
+       <!---  android ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  ios ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"></td>
+       <!---  web ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!---  desktop ---->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 78 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 65 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 58 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 57 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 56 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 50 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 46 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 42 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 40 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 36 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 33 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 28 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 26 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 25 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 23 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 22 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 21 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 20 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 19 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 16 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 15 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 14 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 13 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 12 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 11 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 10 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 09 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 08 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 07 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 06 --->
+       <td class="w3-black w3-border-right w3-large"></td>
+       <!--- NIP 05 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 04 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 03 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+       <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined"></span><span class="material-icons-outlined"></span></td>
+       <!--- NIP 01 --->
+        <td class="w3-black w3-border-right w3-xxlarge material-icons"><span class="material-icons-outlined">done</span></td>
      </tr>
      <!--- more to come--->
      <tr>
