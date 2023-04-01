@@ -2,7 +2,7 @@
 ## discover the nostr universe
 keeping a comprehensive list of nostr products
 
-## CONTRIBUTE
+### contribute
 Add your nostr product, its story and features to the discover tab:
 
 Template
