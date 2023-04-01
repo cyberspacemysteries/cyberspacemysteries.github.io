@@ -1,2 +1,3 @@
-# nostr-ings.github.io
-open design for nostr products
+# nostr-ings.com
+## discover the nostr universe
+creative expression beyond what you know of social media
