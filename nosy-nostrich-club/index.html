@@ -4,115 +4,153 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial scale=1.0">
-<title>Nosy Nostrich Club: Nostr Product Design Review</title>
-<!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-<!-- JavaScript Bundle with Popper -->
-<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="css/custom.scss"/>
+<title>nosy nostrich club</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../css/custom.css" />
 <!--- open graph --->
-<meta property="og:title" content="Nosy Nostrich Club: Product Design Review" />
+<meta property="og:title" content="nosy nostrich club" />
+<meta property="og:description" content="improving ui/ux design often means getting a little nosy." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nostr-ings.com/nosy-nostrich-club/index.html" />
-<meta property="og:image" content="https://nostr-ings.com/images/about/nostr-ings.png" />
+<meta property="og:url" content="https://nostr-ings.com" />
+<meta property="og:image" content="https://nostr-ings.com/images/about/nosy-nostrich-club-social.png" />
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
-<meta property="og:site_name" content="nostr-ings open design community" />
+<meta property="og:site_name" content="nosy nostrich club" />
 <!--- end open graph --->
 </head>
-<body class="bg-dark text-light">
-  <!---navigation--->
-  <nav class="navbar navbar-expand navbar-light bg-light">
-    <div class="container">
-      <a href="../index.html" class="navbar-brand">nostr-ings</a>
-    </div>
-  </nav>
-  <!---end navigation--->
-  <!--- main message --->
-  <div class="container-fluid bg-image d-flex justify-content-center align-items-center" style="background-image: url('#'); height: 450px;">
-    <div class="container bg-dark bg-opacity-60 text-center rounded-5">
-      <blockquote class="blockquote">
-        <h1 class="display-1">nosy nostrich club</h1>
-        <h2 class="mb-0">improving design often means getting a little nosy</h2>
-        <p>nostr products design review</p>
-      </blockquote>
-</div>
-</div>
-  <!---end main message--->
-  <!--- content --->
-  <div class="container p-5">
-    <div class="row">
-      <div class="col">
-      <div class="box align-left">
-      <p class="display-6">We explore the nostr cyberspace to discover how nostr builders and designers are shaping unique experiences for their visitors.</p>
+<body class="w3-black">
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card" id="myNavbar">
+      <a href="../index.html" class="w3-bar-item w3-button w3-wide w3-hover-black">nostr-ings</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="../newbie-nostriches/index.html" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-question"></i>&nbsp;&nbsp;how-to</a>
+        <a href="../nostr-universe/index.html" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-th"></i>&nbsp;&nbsp;discover</a>
+        <a href="#home" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-file-o"></i>&nbsp;&nbsp;docs</a>
+        <a href="https://donate.nostr-ings.com" target="new" alt="donate with BTCPayServer" class="w3-bar-item w3-button w3-hover-amber"><i class="fa fa-bolt"></i>&nbsp;&nbsp;donate</a>
       </div>
-    </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-purple w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
   </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="card-group">
-        <!--- nosy nostrich 0 --->
-        <div class="card bg-dark p-2">
-          <img src="" class="card-img-top" alt="">
-          <div class="card-body">
-            <p class="card-text">Nosy Nostrich 0</p>
-            <h5 class="card-title">Welcoming Newbie Nostriches</h5>
-            <p class="card-text">Exploring the login process</p>
-          </div>
-          <div class="card-footer text-center">
-          </div>
-        </div>
-        <!--- end nosy nostrich 0 --->
-        <!--- nosy nostrich 1 --->
-        <div class="card bg-dark p-2">
-          <img src="" class="card-img-top" alt="">
-          <div class="card-body">
-            <p class="card-text">Nosy Nostrich 1</p>
-            <h5 class="card-title">The marriage of Nostr+Lightning</h5>
-            <p class="card-text">Exploring nostr + lightning integrations</p>
-          </div>
-          <div class="card-footer text-center">
-          </div>
-        </div>
-        <!--- end nosy nostrich 1 --->
-      </div>
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple w3-large w3-padding-16">Close ×</a>
+    <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-home"></i>&nbsp;&nbsp;nostr-ings</a>
+    <a href="../newbie-nostriches/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-question"></i>&nbsp;&nbsp;how-to</a>
+    <a href="../nostr-universe/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-th"></i>&nbsp;&nbsp;discover</a>
+    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-file-o"></i>&nbsp;&nbsp;docs</a>
+    <a href="https://donate.nostr-ings.com" target="new" alt="donate with BTCPayServer" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-amber"><i class="fa fa-bolt"></i>&nbsp;&nbsp;donate</a>
+  </nav>
+
+
+<!-- Header with full-height image -->
+<header class="bgimg-2 w3-display-container w3-padding-top-64" id="home">
+  <div class="w3-center w3-text-white w3-padding">
+    <br><br><br>
+    <h1 class="w3-jumbo">nosy nostrich club</h1>
+    <h2>improving design often means getting a little nosy</h2>
+    <br>
+  </div><hr>
+</header>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-black w3-content w3-padding" style="max-width:1200px;" id="nips">
+  <!--- description -->
+  <div class="w3-row-padding w3-padding-16">
+    <div class="w3-container w3-padding" id="unwearables">
+      <h3>nostr products design review</h3>
+      <p class="w3-large">Exploring the nostr cyberspace to discover how nostr builders and designers are shaping unique experiences for their visitors.</p>
+      <p class="w3-large">Get a little nosy with #nostr-ings: Share your thoughts and screenshots of nostr clients using #nostr-ings</p>
+      <br>
     </div>
   </div>
-  <div class="container p-5">
-    <div class="row">
-      <div class="col">
-      <div class="box align-left">
-      <h2 class="display-6">Get a little nosy with #nostr-ings</h2>
-      <p>Share your nostr client screenshots using #nostr-ings on Nostr, Twitter & Discord</p>
+    <div class="w3-row-padding w3-padding-16 w3-center">
+    <!--- design 0 --->
+      <div class="w3-half w3-padding" id="design-0">
+        <a href="nosy-nostrich-club-0/index.html" alt="design 0: nostr spirit" class="w3-btn w3-block w3-round w3-black w3-border w3-hover-purple"><h3>trek 0</h3>
+        Welcoming Newbie Nostriches <br>Exploring the sign up & login process<br><br></a>
+        <br></br>
       </div>
+      <!--- design 1
+        <div class="w3-half w3-padding" id="design-1">
+          <a href="design-1/index.html" alt="design 1: nostr compass" class="w3-btn w3-block w3-round w3-black w3-border w3-hover-purple"><h3>nosy nostrich 1</h3>
+          The marriage of Nostr+Lightning <br>Exploring nostr + lightning integrations<br><br></a>
+          <br></br>
+        </div> --->
+
+  <!-- Pagination
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
     </div>
-    </div>
+  </div>--->
+<!-- End page content -->
   </div>
-  <!--- end content --->
-  <!---footer--->
-  <div class="container-fluid bg-dark border-top mt-5 pt-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">
-          <h2>nostr-ings</h2>
-          <h3>unleashing the nostrich within</h3>
-          <p>independent open design</p>
-          <a class="btn btn-light" href="https://discord.gg/bJrWFds6je" target="new" alt="Nostr-ings on discord">discord</a>
-          <a href="https://github.com/nostr-ings" class="btn btn-dark border-light" target="new">github</a>
-        </div>
+</div>
+<hr class="w3-border-dark-grey">
+<!-- Footer -->
+  <footer class="w3-container w3-padding w3-black">
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <h2>nostr-ings</h2>
+        <p>unleashing the nostrich within</p>
+        <p>independent open design</p>
+        <a href="https://donate.nostr-ings.com/" class="w3-button w3-black w3-hover-purple text-light" target="new"><i class="fa fa-heart w3-hover-opacity"></i> donate</a></p>
+      </div>
+
+      <div class="w3-half">
+        <h3>follow the journey</h3>
+        <p class="w3-medium npub">nostr:<br>npub1a7n2h5y3gt90y00mwrknhx74fyzzjqw25ehkscje58x9tfyhqd5snyvfnu</p>
+        <a href="https://github.com/nostr-ings" class="w3-button w3-black w3-hover-purple" target="new"><i class="fa fa-github w3-hover-opacity"></i></a>
+        <a class="w3-button w3-black w3-hover-purple" href="https://discord.gg/bJrWFds6je" target="new" alt="Nostr-ings on discord">discord</a>
       </div>
     </div>
+<hr class="w3-border-dark-grey">
+  </footer>
+
+  <div class="w3-black w3-center w3-padding">
+    <p class="w3-medium">Built to be free with <a href="https://creativecommons.org/publicdomain/zero/1.0/" class="text-light" target="new">CC0 1.0</a></p>
+    <a href="#home" class="w3-button w3-black w3-hover-black"><i class="fa fa-arrow-up w3-margin-right"></i>Back to the beginning</a>
   </div>
-    <div class="container mt-5 pt-5 pb-3">
-      <div class="row">
-        <div class="col">
-          <p class="text-center">Independent open design | <a href="https://donate.nostr-ings.com/" class="text-light" target="new">donate</a></p>
-          <p class="text-center">Built to be free with <a href="https://creativecommons.org/publicdomain/zero/1.0/" class="text-light" target="new">CC0 1.0</a></p>
-        </div>
-      </div>
-    </div>
-  <!---end footer--->
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
 </body>
 </html>
