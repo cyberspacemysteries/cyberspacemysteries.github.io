@@ -52,7 +52,7 @@
 <!-- Header with full-height image -->
 <header class="bgimg-2 w3-display-container w3-black w3-padding-top-64" id="home">
   <div class="w3-center w3-text-white w3-padding">
-    <h1 class="w3-xxlarge">trek 0: <br>the UX of welcoming newbie nostriches</h1>
+    <h1 class="w3-xxlarge">trek 1: <br>value4value</h1>
     <h2 class="w3-large"><a href="../index.html">nosy nostrich club</a></h2>
   </div><hr>
 </header>
@@ -67,7 +67,7 @@
           <!--- <img src="../../images/placeholders/image-placeholder-square.png" style="width:100%" alt="placeholder"> --->
         </div>
         <div class="w3-container">
-          <p class="w3-large w3-text-theme"><a href="https://github.com/nostr-ings/nostr-ings.github.io/issues/16" target="new" alt="Nosy Nostrich GitHub"><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-purple"></i>github issue for comments</a></p>
+          <p class="w3-large w3-text-theme"><a href="https://github.com/nostr-ings/nostr-ings.github.io/issues/17" target="new" alt="Nosy Nostrich GitHub"><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-purple"></i>github issue for comments</a></p>
           <p class="w3-large"><b><i class="fa fa-hashtag fa-fw w3-margin-right w3-text-purple"></i>share thoughts and screenshots using #nostr-ings</b></p>
           <br>
         </div>
@@ -77,40 +77,45 @@
     </div>
     <!-- Right Column -->
     <div class="w3-twothird">
-<!--- Latest features --->
+    <!--- description --->
+        <div class="w3-container w3-card w3-black w3-margin-bottom">
+          <h2 class="w3-padding-16"><i class="fa fa-sticky-note-o fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Background</h2>
+          <div class="w3-container">
+            <p>Bitcoin adoption is tied to its uses. A new use is arising: zaps in nostr.</p>
+            <p>Nostr is a decentralized protocol in active development for various use cases, starting with social media.</p>
+            <p>Within this unique <a href="<<https://github.com/nostr-protocol/nostr" target="new" alt="nostr GitHub">FOSS community</a> encompassing various development hubs, the zap was born.</p>
+            <p>A zap is a bitcoin micropayment using the lightning network.</p>
+            <p>Zaps are opening a door to a culture of value4value by giving access to people all over the world to permissionless payments for offering content+ to their niche audiences.</p>
+            <p class="w3-leftbar w3-purple w3-padding">As nostr grows, so does the possibility of wider bitcoin adoption. Nostr contributes to bitcoin discoverability & supports value4value.</p>
+            <hr>
+            <p class="w3-large">nostr active users: 480,282</p>
+            <p class="w3-large">btc zapped: 7.07800025</p>
+            <p>1 May 2023, primal.net</p>
+            <hr>
+          </div>
+        </div>
+
+<!--- challenges --->
       <div class="w3-container w3-card w3-black w3-margin-bottom">
-        <h2 class="w3-padding-16"><i class="fa fa-cog fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Approach</h2>
+        <h2 class="w3-padding-16"><i class="fa fa-cog fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Challenges</h2>
         <div class="w3-container">
-          <h3 class="">Explore the sign up & login processes</h3>
-          <h4 class="w3-large">Timeline</h4>
-          <!---
-          <p class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2023 - April 11   <span class="w3-tag w3-purple w3-round">Started</span></p>--->
-          <h4 class="w3-large">Nostr Ecosystem Review</h4>
-          <p class="w3-text-purple">Take notes & screenshots</p>
-          <p>Design patterns</p>
-          <p>Special use cases</p>
-          <p>Wording</p>
-          <p>Overall features</p>
-          <p>Details</p>
-          <p>Educational opportunities</p>
-          <h4 class="w3-large">Ask Questions</h4>
-          <p>How are nostr clients solving sign up and login issues?</p>
-          <p>What is confusing?</p>
-          <p>What is innovative?</p>
-          <p>What could be improved or simplified?</p>
+          <h3 class="">Scaling + UI/UX</h3>
+          <p>The nostr protocol can be accessed through multiple nostr clients, many of which are in the process of implementing zaps. UI/UX varies and needs to address multiple issues on guiding people to receive and send zaps.</p>
           <hr>
+          <h3 class="">Privacy & Security</h3>
+          <p>Nostr is using the NIP57 implementation, which uses LNURL in order to let people receive zaps on profiles, individual notes(similar to posts or tweets) and other types of nostr clients like blogging or music.</p>
+          <p>Using LNURL carries bitcoin privacy and custodial issues, as well as a concentration of use within a few, if not one, bitcoin wallet supporting LNURL addresses, which has led to service outages during peak times or zapathons (rallies to zap during a limited period of time)</p>
+          <p>Bolt12 has been explored as an alternative and hopes to replace LNURL, but its lack of widespread implementation has prevented its nostr implementation.</p>
+          <p>An economy using lightning can help prevent poor practices of data gathering for advertising.</p>
         </div>
       </div>
-<!--- on nostr --->
-      <div class="w3-container w3-card w3-black w3-margin-bottom">
-        <h2 class="w3-padding-16"><i class="fa fa-compass fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Goal</h2>
-        <div class="w3-container">
-          <p>See the wider perspective of the current nostr client ecosystem</p>
-          <p>Suggest improvements to individual product makers (PR's whenever possible)</p>
-          <p>Create relevant guides for Newbie Nostriches</p>
-          <hr>
-        </div>
-      </div>
+      <!--- approach --->
+            <div class="w3-container w3-card w3-black w3-margin-bottom">
+              <h2 class="w3-padding-16"><i class="fa fa-map-marker fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Approach</h2>
+              <div class="w3-container">
+                <h3 class="">...</h3>
+              </div>
+            </div>
     <!-- End Right Column -->
     </div>
 
