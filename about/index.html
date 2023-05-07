@@ -4,20 +4,20 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial scale=1.0">
-<title>a down-to-earth nostr guide for newbie nostriches</title>
+<title>Nostr-ings: Discover the nostr universe</title>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="../css/custom.css" />
 <!--- open graph --->
-<meta property="og:title" content="a down-to-earth nostr guide" />
-<meta property="og:description" content="for newbie nostriches" />
+<meta property="og:title" content="Nostr-ings" />
+<meta property="og:description" content="Discover the nostr universe" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://nostr-ings.com/newbie-nostriches/index.html" />
 <meta property="og:image" content="https://nostr-ings.com/images/about/nostr-ings.png" />
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
-<meta property="og:site_name" content="a down-to-earth nostr guide" />
+<meta property="og:site_name" content="Nostr-ings" />
 <!--- end open graph --->
 </head>
 <body class="w3-black">
@@ -27,11 +27,11 @@
       <a href="../index.html" class="w3-bar-item w3-button w3-wide w3-hover-black">nostr-ings</a>
       <!-- Right-sided navbar links -->
       <div class="w3-right w3-hide-small">
-        <a href="../about/index.html" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-question"></i>&nbsp;&nbsp;about</a>
+        <a href="#home" class="w3-bar-item w3-button w3-white"><i class="fa fa-question"></i>&nbsp;&nbsp;about</a>
         <a href="https://cutclout.com" target="new" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-pencil"></i>&nbsp;&nbsp;blog</a>
-        <a href="#" class="w3-bar-item w3-button w3-white"><i class="fa fa-cog"></i>&nbsp;&nbsp;how-to</a>
+        <a href="../newbie-nostriches/index.html" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-cog"></i>&nbsp;&nbsp;how-to</a>
         <a href="../nostr-universe/index.html" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-th"></i>&nbsp;&nbsp;discover</a>
-        <a href="#home" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-file-o"></i>&nbsp;&nbsp;docs</a>
+        <a href="../docs/index.html" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-file-o"></i>&nbsp;&nbsp;docs</a>
         <a href="https://donate.nostr-ings.com" target="new" alt="donate with BTCPayServer" class="w3-bar-item w3-button w3-hover-amber"><i class="fa fa-bolt"></i>&nbsp;&nbsp;donate</a>
       </div>
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -46,9 +46,11 @@
   <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple w3-large w3-padding-16">Close ×</a>
     <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-home"></i>&nbsp;&nbsp;nostr-ings</a>
-    <a href="../newbie-nostriches/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-question"></i>&nbsp;&nbsp;how-to</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-white"><i class="fa fa-question"></i>&nbsp;&nbsp;about</a>
+    <a href="https://cutclout.com" target="new" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-pencil"></i>&nbsp;&nbsp;blog</a>
+    <a href="../newbie-nostriches/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-cog"></i>&nbsp;&nbsp;how-to</a>
     <a href="../nostr-universe/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-th"></i>&nbsp;&nbsp;discover</a>
-    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-file-o"></i>&nbsp;&nbsp;docs</a>
+    <a href="../docs/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-file-o"></i>&nbsp;&nbsp;docs</a>
     <a href="https://donate.nostr-ings.com" target="new" alt="donate with BTCPayServer" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-amber"><i class="fa fa-bolt"></i>&nbsp;&nbsp;donate</a>
   </nav>
 
@@ -57,26 +59,17 @@
 <header class="bgimg-2 w3-display-container w3-padding-top-64" id="home">
   <div class="w3-center w3-text-white w3-padding">
     <br><br><br>
-    <h1 class="w3-jumbo">a down-to-earth <br>nostr guide</h1>
-    <h2>for newbie nostriches</h2>
+    <h1 class="w3-jumbo">nostr-ings</h1>
+    <h2>about</h2>
     <br>
   </div><hr>
 </header>
 <!-- !PAGE CONTENT! -->
-<div class="w3-main w3-black w3-content w3-padding" style="max-width:1200px;" id="nips">
-    <div class="w3-row-padding w3-padding-16 w3-center">
-    <!--- nostering in 5 steps --->
-      <div class="w3-half w3-padding" id="design-0">
-        <a href="https://cutclout.com/101/index.html" target="new" alt="nostering in 5 steps, a nostr-ings guide" class="w3-btn w3-block w3-round w3-black w3-border w3-hover-purple"><h3>Nostering in 5 steps</h3>
-        A nostr-ings guide<br><br></a>
-        <br></br>
-      </div>
-      <!--- nip05 --->
-        <div class="w3-half w3-padding" id="design-0">
-          <a href="how-2-guides/nip05/index.html" alt="nip05 website verification" class="w3-btn w3-block w3-round w3-black w3-border w3-hover-purple"><h3>Verified!?</h3>
-          nip05 website verification on your GitHub website (without using a terminal)<br><br></a>
-          <br></br>
-        </div>
+<div class="w3-main w3-black w3-content w3-padding" style="max-width:1200px;" id="about">
+  <!-- About nostr-ings -->
+  <div class="w3-container w3-padding-32" id="menu">
+    <p class="w3-text-light-grey w3-large w3-margin-top-32 w3-padding">Part of NOSTR's strength, in terms of decentralization and censorship resistance, is making sure that people who use nostr have multiple clients to choose from. As developers and designers create more products running on nostr, it is imperative to have a way for people to discover them.</p>
+    <p class="n-text-purple w3-xlarge w3-margin-top-32 w3-padding ">Nostr-ings can help you discover the nostr universe.</p>
 
 <!-- End page content -->
   </div>
