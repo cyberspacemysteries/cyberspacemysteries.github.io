@@ -36,41 +36,41 @@ GitHub:
 npubs & roles of developers, designers, and those involved in your product's creation:
 
 ## NIPS + other features
-- [x] NIP-01
-- [ ] NIP-02
-- [ ] NIP-03
-- [ ] NIP-04
-- [ ] NIP-05
-- [ ] NIP-06
-- [ ] NIP-07
-- [ ] NIP-08
-- [ ] NIP-09
-- [ ] NIP-10
-- [ ] NIP-11
-- [ ] NIP-12
-- [ ] NIP-13
-- [ ] NIP-14
-- [ ] NIP-15
-- [ ] NIP-16
-- [ ] NIP-19
-- [ ] NIP-20
-- [ ] NIP-21
-- [ ] NIP-22
-- [ ] NIP-23
-- [ ] NIP-25
-- [ ] NIP-26
-- [ ] NIP-28
-- [ ] NIP-33
-- [ ] NIP-36
-- [ ] NIP-40
-- [ ] NIP-42
-- [ ] NIP-46
-- [ ] NIP-50
-- [ ] NIP-56
-- [ ] NIP-57
-- [ ] NIP-58
-- [ ] NIP-65
-- [ ] NIP-78
+- [x] NIP-01 basic protocol flow
+- [ ] NIP-02 handles and contact list
+- [ ] NIP-03 open time stamps
+- [ ] NIP-04 encrypted messages
+- [ ] NIP-05 tying your nostr to a domain
+- [ ] NIP-06 BIP39, BIP32: mnemonic seed phrase
+- [ ] NIP-07 browser extensions
+- [ ] NIP-08 mentions
+- [ ] NIP-09 event deletion
+- [ ] NIP-10 reply threads
+- [ ] NIP-11 relay information
+- [ ] NIP-12 tags
+- [ ] NIP-13 proof of work
+- [ ] NIP-14 subject tag
+- [ ] NIP-15 End of Stored Events Notice
+- [ ] NIP-16 event treatment
+- [ ] NIP-19 bech32 human-friendly display
+- [ ] NIP-20 command results
+- [ ] NIP-21 nostr: URL scheme
+- [ ] NIP-22 event created_at
+- [ ] NIP-23 long-form content
+- [ ] NIP-25 reactions
+- [ ] NIP-26 delegated event signing
+- [ ] NIP-28 public chat
+- [ ] NIP-33 replaceable events
+- [ ] NIP-36 sensitive content
+- [ ] NIP-40 expiration timestamp
+- [ ] NIP-42 authentication of clients to relays
+- [ ] NIP-46 nostr connect
+- [ ] NIP-50 search: keywords filter
+- [ ] NIP-56 reporting
+- [ ] NIP-57 zap
+- [ ] NIP-58 badges
+- [ ] NIP-65 relay list metadata
+- [ ] NIP-78 app specific data
 - please list additional features:
 
 ## Screenshots
