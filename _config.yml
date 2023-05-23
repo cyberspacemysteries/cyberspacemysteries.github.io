@@ -21,7 +21,7 @@
 title: Nostr-ings
 email: no-reply@nostr-ings.com
 description: ""
-baseurl: "nostr-ings.github.io" # Only for gh-pages. Comment this line to run the website on localhost:4000
+baseurl: "/" # Only for gh-pages. Comment this line to run the website on localhost:4000
 url: "https://nostr-ings.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
