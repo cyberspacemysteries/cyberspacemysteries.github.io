@@ -21,7 +21,7 @@
 title: Nostr-ings
 email: no-reply@nostr-ings.com
 description: ""
-baseurl: "Guide" # Only for gh-pages. Comment this line to run the website on localhost:4000
+baseurl: "bitcoin-design-guide" # Only for gh-pages. Comment this line to run the website on localhost:4000
 url: "https://nostr-ings.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
