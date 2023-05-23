@@ -8,6 +8,8 @@ secondary_nav: false
 image: https://bitcoin.design/assets/images/submit-header-design-preview.jpg
 ---
 
+From [Bitcoin Design Guide](https://bitcoin.design)
+
 # How to submit a home page banner theme design
 
 If you have arrived on this page, you probably noticed that the banner of the home page of the Bitcoin Design community features a series of different designs. Those were all created by different community members, like you. It is important for us to show that bitcoin is not just one idea, or has to follow one style, or have one specific personality. That's why we decided to create this open canvas right on the top of our home page.
