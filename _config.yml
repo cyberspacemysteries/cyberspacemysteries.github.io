@@ -20,7 +20,7 @@
 
 title: Nostr-ings
 email: no-reply@nostr-ings.com
-description: "Bitcoin Design is a free open-source community resource that helps designers and developers working on bitcoin-products to create better experiences, faster."
+description: ""
 # baseurl: "Guide" # Only for gh-pages. Comment this line to run the website on localhost:4000
 url: "https://nostr-ings.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
@@ -71,7 +71,7 @@ social:
   name: Nostr-ings
   links:
     github: nostr-ings
-    discord: bitcoindesign
+    discord: nostr-ings
 
 exclude:
   - README.md
