@@ -42,9 +42,46 @@ Illustration sources
 
 Each nostr client blends a unique mixture of nostr implementations along with design and development choices, giving a unique experience. Highlightning those unique details is part of nostr-ings mission.
 
----
+<!--- row with 2 columns--->
+<div class="columns-desktop -two -ref">
 
-{% include next-previous.html
-   nextUrl = "/nostrverse/getting-started/introduction/"
-   nextName = "Get started"
+<!--- one column --->
+<div class="column" markdown="1">
+
+{% include image.html
+   image = "/assets/images/home/placeholder-column.png"
+   retina = "/assets/images/home/placeholder-column@2x.png"
+   alt-text = "Placeholder image for two column setup"
+  caption = "Caption when needed"
+   width = 400
+   height = 210
+   link-url = "/link-url-when-needed/"
 %}
+
+<h2 class="h3" markdown="1">[Title with link]({{ '/section/sub-section/' | relative_url }})</h2>
+
+The simplest open protocol that is able to create a censorship-resistant global "social" network once and for all.
+
+</div>
+<!--- end one column --->
+<!--- one column --->
+<div class="column" markdown="1">
+
+{% include image.html
+   image = "/assets/images/home/placeholder-column.png"
+   retina = "/assets/images/home/placeholder-column@2x.png"
+   alt-text = "Placeholder image for two column setup"
+   caption = "Caption when needed"
+   width = 400
+   height = 210
+   link-url = "/link-url-when-needed/"
+%}
+
+<h2 class="h3" markdown="1">[Title with link]({{ '/section/sub-section/' | relative_url }})</h2>
+
+The simplest open protocol that is able to create a censorship-resistant global "social" network once and for all.
+
+</div>
+<!--- end one column --->
+</div>
+<!--- end row --->
