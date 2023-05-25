@@ -23,9 +23,10 @@ email: 119618812+elidyweaver@users.noreply.github.com
 description: ""
 #baseurl: "/" # Only for gh-pages. Comment this line to run the website on localhost:4000
 url: "https://nostr-ings.com" # the base hostname & protocol for your site, e.g. http://example.com
-github_username: nostr-ings
+twitter_username: jekyllrb
+github_username: jekyll
 
-github_repository_url: "https://github.com/nostr-ings/nostr-ings.github.io"
+github_repository_url: "https://github.com/nostr-ings/nostr-ings.github.io/"
 discord_invite_url: "https://discord.gg/bJrWFds6je"
 
 # Build settings
