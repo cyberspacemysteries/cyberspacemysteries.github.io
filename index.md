@@ -7,6 +7,7 @@ permalink: /
 title: Nostr-ings.
 description: Supporting choice and control back in the hands of the individual.
 image: https://nostr-ings.com/assets/images/home/placeholder-preview.png
+
 ---
 
 {% include picture.html
@@ -19,8 +20,6 @@ image: https://nostr-ings.com/assets/images/home/placeholder-preview.png
    height = 600
    layout = "full-width"
 %}
-
-# Nostr-ings
 
 ## A supportive design & discovery testing ground to help the nostr community craft evolving [nostr](https://nostr.com) experiences
 
