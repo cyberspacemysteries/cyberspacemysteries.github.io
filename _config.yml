@@ -21,8 +21,8 @@
 title: Nostr-ings
 email: 119618812+elidyweaver@users.noreply.github.com
 description: ""
-#baseurl: "" # Only for gh-pages. Comment this line to run the website on localhost:4000
-url: "https://nostr-ings.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # Only for gh-pages. Comment this line to run the website on localhost:4000
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: nostr-ings
 
 github_repository_url: "https://github.com/nostr-ings/nostr-ings.github.io"

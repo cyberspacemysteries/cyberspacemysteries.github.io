@@ -3,7 +3,7 @@
 
   {%- include head.html -%}
 
-  <body class="{% if page.path contains 'guide' or page.path contains 'handbook' o page.path contains 'nostrverse' or page.path contains 'club' %}sidebar{% endif %}">
+  <body class="{% if page.path contains 'handbook' %}sidebar{% endif %}">
 
     <a class="skip-to-content-link" href="#main">
       Skip to content
@@ -14,9 +14,22 @@
 
     <main class="page-content" aria-label="Content">
 
+      {% if page.url == '/home' %}
+      <div class="hero" style="background-image: url(/assets/images/home/hero.png);">
+        <div class="main">
+          <h1 class="page-heading">
+            Nostr-ings <br>
+          </h1>
+          <h3>
+            crafting a nostr experience
+          </h3>
+        </div>
+      </div>
+      {% endif %}
+
       <div class="page-content-wrapper">
 
-        {%- if page.path contains 'guide' or page.path contains 'handbook' o page.path contains 'nostrverse' or page.path contains 'club' -%}
+        {%- if page.path contains 'handbook' -%}
         <div class="side-bar">
           <nav role="navigation" aria-label="Main" id="secondary-nav" class="secondary-nav">
               {% include secondary-nav.html id="side" %}
@@ -24,7 +37,7 @@
         </div>
         {%- endif -%}
 
-        <div class="main{% if page.path contains 'guide' or page.path contains 'handbook' o page.path contains 'nostrverse' or page.path contains 'club' %} sidebar{% endif %}{% if page.main_classes %} {{ page.main_classes }}{% endif %}" id="main">
+        <div class="main{% if page.path contains 'handbook' %} sidebar{% endif %}{% if page.main_classes %} {{ page.main_classes }}{% endif %}" id="main">
 
           {{ content }}
 
