@@ -19,13 +19,13 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Nostr-ings
+author:
+name:
 email: 
 description: "A supportive design & discovery testing ground for crafting evolving nostr experiences"
-baseurl: "" # Only for gh-pages. Comment this line to run the website on localhost:4000
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+#baseurl: "" # Only for gh-pages. Comment this line to run the website on localhost:4000
+#url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: nostr-ings
-
-
 github_repository_url: "https://github.com/nostr-ings/nostr-ings.github.io/"
 discord_invite_url: "https://discord.gg/bJrWFds6je"
 
