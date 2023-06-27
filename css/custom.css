@@ -1,0 +1,153 @@
+/* pages and rabbit holes */
+:root {
+   --computer: #dbdfe2;
+   --computer-shadow: #aaabaf;
+   --space: #010837;
+   --text: #65ffff;
+   --white: #ffffff;
+   --offwhite: #f1f1f1;
+   --grey: #ccc;
+   --black: #000000;
+   --offblack: #1B1B1B;
+   --orange: #Ffac48;
+   --purple: #DC66FA;
+   --teal: #65d1d1;
+         }
+/* body */
+body {
+background-color: var(--offblack);
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+n-black {
+  background-color: var(--offblack);
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../assets/images/about/nostr-ings-background.png");
+  min-height: 100%;
+}
+.bgimg-2 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../assets/images/about/nostr-ings-background.png");
+  min-height: 20%;
+}
+.n-padding-top {
+  padding-top: 10%;
+}
+
+.n-padding {
+  padding: 20%, 5%, 20%, 5%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+.n-text-purple {
+  color: var(--purple);
+}
+.npub {
+  word-wrap: break-word;
+}
+/* navigation search */
+/* Style the search box */
+#nostrSearch {
+ width: 85%;
+ font-size: 1.3em;
+ padding: 3px 3px 3px 15px;
+ margin-left: 10px;
+ border-radius: 25px;
+ border: 1px solid white;
+ color: black;
+}
+
+/* Style the navigation menu */
+#nostrClients {
+ padding: 0;
+ margin: 0;
+}
+
+#nostrClients {
+   list-style-type: none;
+   text-decoration: none;
+}
+
+.nostrClient li {
+   list-style-type: none !important;
+   text-decoration: none;
+}
+
+/* Style the navigation links */
+#nostrClients li a {
+ padding: 5px;
+ text-decoration: none;
+ color: var(--offwhite);
+ display: block;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: var(--offblack);
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: var(--offwhite);
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: var(--offwhite);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: var(--purple);
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: var(--offblack);
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: var(--offwhite);
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: var(--purple);
+  color: var(--offwhite);
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}

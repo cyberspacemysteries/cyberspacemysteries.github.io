@@ -1,42 +1,508 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Nostr-ings</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="assets/css/style.css" >
-<!--- open graph --->
-<meta property="og:title" content="discover the universe of nostr clients" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://nostr-ings.com" />
-<meta property="og:image" content="https://nostr-ings.com/images/about/nostr-ings.png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:site_name" content="discover the universe of nostr clients" />
-<!--- end open graph --->
-</head>
-<body>
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-  </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">Nostr-ings</h1>
-    <h2 class="w3-xlarge w3-center">reBUIDLing in progress...</h2>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
+<html lang="en">
 
-    <p class="w3-large w3-center">coming May 30</p>
-    <img src="assets/images/home/elidy-on-nostr.png" class="w3-image w3-center">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial scale=1.0">
+  <title>nostr-ings</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css" />
+  <!--- open graph --->
+  <meta property="og:title" content="Discover the nostrverse. Unleash your inner nostrich." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://nostr-ings.com" />
+  <meta property="og:image" content="https://nostr-ings.com/assets/images/about/nostr-ings.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="nostr-ings" />
+  <!--- end open graph --->
+</head>
+<body class="w3-black">
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card" id="myNavbar">
+      <a href="#" class="w3-bar-item w3-button w3-wide w3-hover-black">nostr-ings</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <!--- nostering --->
+        <a href="nostering/index.html" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-cog"></i>&nbsp;&nbsp;nostering</a>
+        <!--- keep nostr weird --->
+        <a href="keep-nostr-weird/index.html" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-compass"></i>&nbsp;&nbsp;keep nostr weird</a>
+        <!--- donate --->
+        <a href="about/index.html" alt="donate" class="w3-bar-item w3-button w3-hover-amber"><i class="fa fa-bolt"></i>&nbsp;&nbsp;donate</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-purple w3-right w3-hide-large w3-hide-medium"
+        onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
   </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-    <a href="https://github.com/nostr-ings/nostr-ings.github.io" target="new"><i
-        class="fa fa-github w3-hover-opacity w3-xxlarge"></i></a><br><br>
-    <a href="nostr:npub1a7n2h5y3gt90y00mwrknhx74fyzzjqw25ehkscje58x9tfyhqd5snyvfnu" class="npub" target="new">npub1a7n2h5y3gt90y00mwrknhx74fyzzjqw25ehkscje58x9tfyhqd5snyvfnu</a>
-    <br><br><br>
+
+  <!-- Mobile -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none"
+    id="mySidebar">
+    <!--- close --->
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple w3-large w3-padding-16">close ×</a>
+    <!--- home --->
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-purple w3-hover-purple"><i class="fa fa-home"></i>&nbsp;&nbsp;nostr-ings</a>
+    <!--- nostering --->
+    <a href="nostering/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-cog"></i>&nbsp;&nbsp;nostering</a>
+    <!--- keep nostr weird --->
+    <a href="keep-nostr-weird/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-compass"></i>&nbsp;&nbsp;keep nostr weird</a>
+    <!--- donate --->
+    <a href="about/index.html" alt="donate" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-amber"><i class="fa fa-bolt"></i>&nbsp;&nbsp;donate</a>
+  </nav>
+  <!--- End nav --->
+<!-- Header with full-height image -->
+<header class="bgimg-2 w3-display-container w3-black w3-padding-top-64" id="home">
+  <div class="w3-center w3-text-white w3-padding">
+    <h1 class="w3-jumbo">nostr-ings</h1>
+    <h1 class="w3-xxlarge">discover the nostrverse</h1>
+    <input type="text" id="nostrSearch" onkeyup="myFunction()" placeholder="Search..." title="Type in a nostr client">
+
+  </div>
+</header>
+<hr class="w3-border-dark-grey">
+<!-- Nostr client Section -->
+<!-- Web client Section -->
+<ul class="w3-container w3-padding-32 menu" id="nostrClients">
+  <!--- row 1 --->
+  <div class="w3-row-padding">
+<!--- astral ninja --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-blue w3-hover-purple">
+            <a href="https://astral.ninja" target="new" alt="astral ninja"> astral <span class="w3-medium">web</span></a>
+            <img src="assets/images/nostr-universe/nostr-client-astral-ninja.png" alt="astral.ninja" style="width:100%">
+          </div>
+      </div>
+    </li>
+<!--- blockcore notes --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-blue w3-hover-purple">
+            <a href="https://notes.blockcore.net/connect" target="new" alt="blockcore notes">blockcore notes <span class="w3-medium">web</span></a>
+            <img src="assets/images/nostr-universe/nostr-client-blockcore-notes.png" alt="blockcore notes" style="width:100%">
+          </div>
+      </div>
+    </li>
+<!--- blogstack --->
+  <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+        <div class="w3-display w3-xlarge w3-blue w3-hover-purple">
+          <a href="https://blogstack.io/" target="new" alt="blockstack"> blogstack <span class="w3-medium">web blog</span></a>
+          <img src="assets/images/nostr-universe/nostr-client-blogstack.png" alt="blockcore notes" style="width:100%">
+        </div>
+    </div>
+  </li>
+<!--- coracle --->
+<li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+  <div class="w3-display-container">
+      <div class="w3-display w3-xlarge w3-blue w3-hover-purple">
+        <a href="https://coracle.social/notes" target="new" alt="coracle social">    coracle <span class="w3-medium">web</span></a>
+        <img src="assets/images/nostr-universe/nostr-client-coracle-social.png" alt="coracle social" style="width:100%">
+      </div>
+  </div>
+</li>
+    <!--- end row 1 --->
+  </div>
+  <!--- row 2 --->
+  <div class="w3-row-padding">
+    <!--- emon --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-blue w3-hover-purple">
+            <a href="https://www.emon.chat/#/login" target="new" alt="emon chat">emon <span class="w3-medium">web chat</span></a>
+            <img src="assets/images/nostr-universe/nostr-client-emon-chat.png" alt="emon chat" style="width:100%">
+          </div>
+      </div>
+    </li>
+    <!--- goodstr --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-blue w3-hover-purple">
+            <a href="https://goodstr.io/" target="new" alt="goodstr">goodstr <span class="w3-medium">web marketplace</span></a>
+            <img src="assets/images/about/placeholder-nostr-clients.png" alt="goodstr.io" style="width:100%">
+          </div>
+      </div>
+    </li>
+    <!--- iris --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-blue w3-hover-purple">
+            <a href="https://iris.to/" target="new" alt="iris">iris <span class="w3-medium">web</span></a>
+            <img src="assets/images/nostr-universe/nostr-client-iris-to.png" alt="iris" style="width:100%">
+          </div>
+      </div>
+    </li>
+    <!--- jester --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-blue w3-hover-purple">
+            <a href="https://jesterui.github.io/" target="new" alt="iris">jester <span class="w3-medium">web game chess</span></a>
+            <img src="assets/images/nostr-universe/nostr-client-jester.png" alt="iris" style="width:100%">
+          </div>
+      </div>
+    </li>
+    <!--- end Row 2 --->
+  </div>
+  <!--- row 3 --->
+  <div class="w3-row-padding">
+    <!--- nostr band --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-blue w3-hover-purple">
+            <a href="https://nostr.band/" target="new" alt="nostr band website">nostr.band <span class="w3-medium">web tools discovery</span></a>
+            <img src="assets/images/about/placeholder-nostr-clients.png" alt="nostr band image" style="width:100%">
+          </div>
+      </div>
+    </li>
+    <!--- nostr bitejo --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-blue w3-hover-purple">
+            <a href="https://nostr.bitejo.com/" target="new" alt="nostr bitejo website">NOSTRclassifields <span class="w3-medium">web</span></a>
+            <img src="assets/images/about/placeholder-nostr-clients.png" alt="nostr bitejo image" style="width:100%">
+          </div>
+      </div>
+    </li>
+    <!--- nostrgram --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-blue w3-hover-purple">
+            <a href="https://nostrgram.co/" target="new" alt="nostrgram website">nostrgram <span class="w3-medium">web instagram-like</span></a>
+            <img src="assets/images/nostr-universe/nostr-client-nostrgram.png" alt="nostrgram image" style="width:100%">
+          </div>
+      </div>
+    </li>
+    <!--- nostrnests --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-blue w3-hover-purple">
+            <a href="https://nostrnests.com/" target="new" alt="nostrnests website">nostrnests <span class="w3-medium">web twitter-spaces-like</span></a>
+            <img src="assets/images/about/placeholder-nostr-clients.png" alt="nostrnests image" style="width:100%">
+          </div>
+      </div>
+    </li>
+    <!--- end Row 3 --->
+  </div>
+  <!--- row 4 --->
+  <div class="w3-row-padding">
+    <!--- notebin --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-blue w3-hover-purple">
+            <a href="https://notebin.org/" target="new" alt="notebin website">notebin <span class="w3-medium">web blog paste-bin-like</span></a>
+            <img src="assets/images/nostr-universe/nostr-client-notebin.png" alt="notebin image" style="width:100%">
+          </div>
+      </div>
+    </li>
+    <!--- nvote --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-blue w3-hover-purple">
+            <a href="https://nvote.co/c/nostr/" target="new" alt="nvote website">nvote <span class="w3-medium">web reddit-like hacker-news-like</span></a>
+            <img src="assets/images/nostr-universe/nostr-client-nvote.png" alt="nvote image" style="width:100%">
+          </div>
+      </div>
+    </li>
+    <!--- postr --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-blue w3-hover-purple">
+            <a href="https://write.nostr.com/" target="new" alt="postr website">postr <span class="w3-medium">web blog</span></a>
+            <img src="assets/images/nostr-universe/nostr-client-write-nostr.png" alt="postr image" style="width:100%">
+          </div>
+      </div>
+    </li>
+    <!--- primal --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-blue w3-hover-purple">
+            <a href="https://primal.net/home" target="new" alt="primal website">primal <span class="w3-medium">web</span></a>
+            <img src="assets/images/about/placeholder-nostr-clients.png" alt="primal image" style="width:100%">
+          </div>
+      </div>
+    </li>
+
+    <!--- end row 4 --->
+  </div>
+  <!--- row 5 --->
+  <div class="w3-row-padding">
+    <!--- rsslay --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-blue w3-hover-purple">
+            <a href="https://rsslay.nostr.net/" target="new" alt="rsslay website">rsslay <span class="w3-medium">web tool</span></a>
+            <img src="assets/images/nostr-universe/nostr-client-rsslay.png" alt="rsslay image" style="width:100%">
+          </div>
+      </div>
+    </li>
+    <!--- satellite --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-blue w3-hover-purple">
+            <a href="https://satellite.earth/" target="new" alt="satellite website">satellite <span class="w3-medium">web reddit-like</span></a>
+            <img src="assets/images/about/placeholder-nostr-clients.png" alt="satellite image" style="width:100%">
+          </div>
+      </div>
+    </li>
+    <!--- sendstr --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-blue w3-hover-purple">
+            <a href="https://sendstr.com/" target="new" alt="sendstr website">sendstr <span class="w3-medium">web clipboard</span></a>
+            <img src="assets/images/nostr-universe/nostr-client-sendstr.png" alt="sendstr image" style="width:100%">
+          </div>
+      </div>
+    </li>
+    <!--- snort --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-blue w3-hover-purple">
+            <a href="https://snort.social/global" target="new" alt="snort website">snort <span class="w3-medium">web</span></a>
+            <img src="assets/images/nostr-universe/nostr-client-snort-social.png" alt="snort image" style="width:100%">
+          </div>
+      </div>
+    </li>
+    <!--- end Row 5 --->
+  </div>
+  <!--- end Web Client --->
+</div>
+<!-- android client Section -->
+<div class="w3-container w3-padding-32 menu" id="Android">
+  <!--- android row 1 --->
+  <div class="w3-row-padding">
+  <!--- amethyst --->
+  <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+        <div class="w3-display w3-xlarge w3-green w3-hover-purple">
+          <a href="https://github.com/vitorpamplona/amethyst" target="new" alt="amethyst GitHub with links to download">amethyst <span class="w3-medium">mobile twitter-like android</span></a>
+          <img src="assets/images/nostr-universe/nostr-client-amethyst.png" alt="amethyst image" style="width:100%">
+        </div>
+    </div>
+  </li>
+  <!--- nosky --->
+  <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+        <div class="w3-display w3-xlarge w3-green w3-hover-purple">
+          <a href="https://github.com/KotlinGeekDev/Nosky" target="new" alt="arc websute">nosky <span class="w3-medium">mobile android APK</span></a>
+          <img src="assets/images/about/placeholder-nostr-clients.png" alt="arc image" style="width:100%">
+        </div>
+    </div>
+  </li>
+  <!--- nostros --->
+  <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+        <div class="w3-display w3-xlarge w3-green w3-hover-purple">
+          <a href="https://github.com/KoalaSat/nostros" target="new" alt="nostros GitHub">nostros <span class="w3-medium">mobile android IzzyOnDroid</span></a>
+          <img src="assets/images/about/placeholder-nostr-clients.png" alt="nostros image" style="width:100%">
+        </div>
+    </div>
+  </li>
+  <!--- plasma --->
+  <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+        <div class="w3-display w3-xlarge w3-green w3-hover-purple">
+          <a href="https://github.com/plasma-social/plasma" target="new" alt="plasma GitHub">plasma <span class="w3-medium">mobile twitter-like android</span></a>
+          <img src="assets/images/about/placeholder-nostr-clients.png" alt="plasma image" style="width:100%">
+        </div>
+    </div>
+  </li>
+    <!--- end android row 1 --->
+  </div>
+  <!--- android row 2 --->
+  <div class="w3-row-padding">
+    <!--- plebstr --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-green w3-hover-purple">
+            <a href="https://plebstr.com/" target="new" alt="plebstr website">plebstr <span class="w3-medium">mobile twitter-like android</span></a>
+            <img src="assets/images/about/placeholder-nostr-clients.png" alt="plebstr image" style="width:100%">
+          </div>
+      </div>
+    </li>
+    <!--- end row 2 --->
   </div>
 </div>
+<!--- end android Client --->
+<!-- Apple client Section -->
+<div class="w3-container w3-padding-32 menu" id="Apple">
+  <!--- row 1 --->
+  <div class="w3-row-padding">
+<!--- damus --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-deep-purple w3-hover-purple">
+            <a href="https://damus.io/" target="new" alt="damus website">damus <span class="w3-medium">mobile twitter-like apple iOS</span></a>
+            <img src="assets/images/about/placeholder-nostr-clients.png" alt="damus image" style="width:100%">
+          </div>
+      </div>
+    </li>
+    <!--- plebstr --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-deep-purple w3-hover-purple">
+            <a href="https://www.nos.social/" target="new" alt="plebstr website">nos <span class="w3-medium">mobile twitter-like apple iOS Testflight</span></a>
+            <img src="assets/images/about/placeholder-nostr-clients.png" alt="plebstr image" style="width:100%">
+          </div>
+      </div>
+    </li>
+    <!--- plebstr --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-deep-purple w3-hover-purple">
+            <a href="https://plebstr.com/" target="new" alt="plebstr website">plebstr <span class="w3-medium">mobile twitter-like apple iOS</span></a>
+            <img src="assets/images/about/placeholder-nostr-clients.png" alt="plebstr image" style="width:100%">
+          </div>
+      </div>
+    </li>
+  </div>
+  <!--- end row 1 --->
+  <!--- end apple Client --->
+</div>
+<!-- desktop Section -->
+<div class="w3-container w3-padding-32 menu" id="DesktopAndCommandLine">
+  <!--- row 1 --->
+  <div class="w3-row-padding">
+    <!--- gossip --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-blue-grey w3-hover-purple">
+            <a href="https://github.com/mikedilger/gossip" target="new" alt="gossip GitHub">gossip <span class="w3-medium">desktop linux debian windows</span></a>
+            <img src="assets/images/about/placeholder-nostr-clients.png" alt="gossip image" style="width:100%">
+          </div>
+      </div>
+    </li>
+    <!--- more-speech --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-blue-grey w3-hover-purple">
+            <a href="https://github.com/unclebob/more-speech" target="new" alt="more-speech GitHub">more-speech<span class="w3-medium">desktop clojure </span></a>
+            <img src="assets/images/about/placeholder-nostr-clients.png" alt="more-speech image" style="width:100%">
+          </div>
+      </div>
+    </li>
+    <!--- noscl --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-blue-grey w3-hover-purple">
+            <a href="https://github.com/fiatjaf/noscl" target="new" alt="noscl GitHub">noscl <span class="w3-medium">command line </span></a>
+            <img src="assets/images/about/placeholder-nostr-clients.png" alt="noscl image" style="width:100%">
+          </div>
+      </div>
+    </li>
+    <!--- nostr console --->
+    <li class="nostrClient w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display w3-xlarge w3-blue-grey w3-hover-purple">
+            <a href="https://github.com/vishalxl/nostr_console" target="new" alt="nostr console GitHub">nostr console <span class="w3-medium">command line </span></a>
+            <img src="assets/images/about/placeholder-nostr-clients.png" alt="nostr console image" style="width:100%">
+          </div>
+      </div>
+    </li>
+    <!--- end row 1 --->
+  </div>
+
+  <!--- end desktop Client --->
+</div>
+</div>
+</ul>
+
+<!-- End page content -->
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-padding w3-black">
+  <div class="w3-row-padding">
+  <div class="w3-half w3-padding">
+    <h2 class="n-text-purple">nostr-ings</h2>
+    <p>A practical handbook to unleash your inner nostrich</p>
+    <p>Discovering the nostrverse. Crafting nostr experiences.</p>
+  </div>
+  <div class="w3-half w3-padding">
+    <a href="nostr:npub1a7n2h5y3gt90y00mwrknhx74fyzzjqw25ehkscje58x9tfyhqd5snyvfnu" class="w3-button w3-black w3-hover-purple w3-round" target="new"><img src="assets/images/nostr.svg" alt="nostr"></a>
+    <a href="https://github.com/nostr-ings" class="w3-button w3-black w3-hover-purple w3-round" target="new"><img src="assets/images/github.svg" alt="github"></a>
+    <a class="w3-button w3-black w3-hover-purple w3-round" href="https://discord.gg/bJrWFds6je" target="new" alt="Nostr-ings on discord"><img src="assets/images/discord.svg" alt="discord"></a>
+    <a href="about/index.html" class="w3-button w3-black w3-hover-purple text-light w3-round"><img src="assets/images/zap.svg" alt="donate"></a>
+  </div>
+  </div>
+</footer>
+
+<div class="w3-black w3-center w3-padding">
+  <p class="w3-medium">Built to be free with <a href="https://creativecommons.org/publicdomain/zero/1.0/"
+      class="text-light" target="new">CC0 1.0</a></p>
+  <a href="#home" class="w3-button w3-black w3-hover-black"><i class="fa fa-arrow-up w3-margin-right"></i>Back to the
+    beginning</a>
+</div>
+<!--- End footer --->
+<script>
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
+    }
+  }
+
+  // Close the sidebar with the close button
+  function w3_close() {
+    mySidebar.style.display = "none";
+  }
+</script>
+<script>
+  // Tabbed Menu
+  function openMenu(evt, menuName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("menu");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-purple", "");
+    }
+    document.getElementById(menuName).style.display = "block";
+    evt.currentTarget.firstElementChild.className += " w3-purple";
+  }
+  document.getElementById("myLink").click();
+</script>
+<!--- search --->
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("nostrSearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("nostrClients");
+  li = ul.getElementsByTagName("li");
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
 
 </body>
+
 </html>
