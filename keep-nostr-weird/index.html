@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial scale=1.0">
+<title>keep nostr weird club</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../css/custom.css" />
+<!--- open graph --->
+<meta property="og:title" content="keep nostr weird club" />
+<meta property="og:description" content="exploring the nostrverse to help design nostr experiences" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nostr-ings.com" />
+<meta property="og:image" content="https://nostr-ings.com/images/about/nosy-nostrich-club-social.png" />
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:site_name" content="keep nostr weird club" />
+<!--- end open graph --->
+</head>
+<body class="w3-black">
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card" id="myNavbar">
+      <a href="../index.html" class="w3-bar-item w3-button w3-wide w3-hover-black">nostr-ings</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <!--- nostering --->
+        <a href="../nostering/index.html" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-cog"></i>&nbsp;&nbsp;nostering</a>
+        <!--- keep nostr weird --->
+        <a href="../keep-nostr-weird/index.html" class="w3-bar-item w3-button w3-border-bottom w3-hover-purple"><i class="fa fa-compass"></i>&nbsp;&nbsp;keep nostr weird</a>
+        <!--- donate --->
+        <a href="../about/index.html" alt="donate" class="w3-bar-item w3-button w3-hover-amber"><i class="fa fa-bolt"></i>&nbsp;&nbsp;donate</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-purple w3-right w3-hide-large w3-hide-medium"
+        onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Mobile -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none"
+    id="mySidebar">
+    <!--- close --->
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple w3-large w3-padding-16">close ×</a>
+    <!--- home --->
+    <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-home"></i>&nbsp;&nbsp;nostr-ings</a>
+    <!--- nostering --->
+    <a href="../nostering/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-cog"></i>&nbsp;&nbsp;nostering</a>
+    <!--- keep nostr weird --->
+    <a href="../keep-nostr-weird/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-purple w3-hover-purple"><i class="fa fa-compass"></i>&nbsp;&nbsp;keep nostr weird</a>
+    <!--- donate --->
+    <a href="../about/index.html" alt="donate" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-amber"><i class="fa fa-bolt"></i>&nbsp;&nbsp;donate</a>
+  </nav>
+  <!--- End nav --->
+<!-- Header with full-height image -->
+<header class="bgimg-2 w3-display-container w3-padding-top-64" id="home">
+  <div class="w3-center w3-text-white w3-padding">
+    <br><br><br>
+    <h1 class="w3-jumbo">keep nostr weird club</h1>
+    <br>
+  </div><hr>
+</header>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-black w3-content w3-padding" style="max-width:1200px;" id="keep-nostr-weird">
+  <!--- description -->
+  <div class="w3-row-padding w3-padding-16">
+    <div class="w3-container w3-padding" id="design-components">
+      <p class="w3-large">Space for future pages</p>
+      <br>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-padding w3-black">
+  <div class="w3-row-padding">
+  <div class="w3-half w3-padding">
+    <h2 class="n-text-purple">nostr-ings</h2>
+    <p>A practical handbook to unleash your inner nostrich</p>
+    <p>Discovering the nostrverse. Crafting nostr experiences.</p>
+  </div>
+  <div class="w3-half w3-padding">
+    <a href="nostr:npub1a7n2h5y3gt90y00mwrknhx74fyzzjqw25ehkscje58x9tfyhqd5snyvfnu" class="w3-button w3-black w3-hover-purple w3-round" target="new"><img src="../assets/images/nostr.svg" alt="nostr"></a>
+    <a href="https://github.com/nostr-ings" class="w3-button w3-black w3-hover-purple w3-round" target="new"><img src="../assets/images/github.svg" alt="github"></a>
+    <a class="w3-button w3-black w3-hover-purple w3-round" href="https://discord.gg/bJrWFds6je" target="new" alt="Nostr-ings on discord"><img src="../assets/images/discord.svg" alt="discord"></a>
+    <a href="../about/index.html" class="w3-button w3-black w3-hover-purple text-light w3-round"><img src="../assets/images/zap.svg" alt="donate"></a>
+  </div>
+  </div>
+</footer>
+
+<div class="w3-black w3-center w3-padding">
+  <p class="w3-medium">Built to be free with <a href="https://creativecommons.org/publicdomain/zero/1.0/"
+      class="text-light" target="new">CC0 1.0</a></p>
+  <a href="#home" class="w3-button w3-black w3-hover-black"><i class="fa fa-arrow-up w3-margin-right"></i>Back to the
+    beginning</a>
+</div>
+<!--- End footer --->
+<script>
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+
+
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
+    }
+  }
+
+  // Close the sidebar with the close button
+  function w3_close() {
+    mySidebar.style.display = "none";
+  }
+</script>
+
+</body>
+
+</html>
