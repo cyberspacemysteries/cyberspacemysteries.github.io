@@ -81,13 +81,14 @@ n-black {
    text-decoration: none;
 }
 
-.nostrClient li {
+.nostrClient li, #letter-A li, #letter-B li, #letter-C li, #letter-D li, #letter-E li, #letter-F li, #letter-G li, #letter-H li, #letter-I li, #letter-J li, #letter-K li, #letter-L li, #letter-M li, #letter-N li, #letter-O li, #letter-P li, #letter-Q li, #letter-R li, #letter-S li, #letter-T li, #letter-U li, #letter-V li, #letter-W li, #letter-X li, #letter-Y li, #letter-Z li
+{
    list-style-type: none !important;
-   text-decoration: none;
+   text-decoration: none !important;
 }
 
 /* Style the navigation links */
-#nostrClients li a {
+#nostrClients li a, #letter-A li a, #letter-B li a, #letter-C li a, #letter-D li a, #letter-E li a, #letter-F li a, #letter-G li a, #letter-H li a, #letter-I li a, #letter-J li a, #letter-K li a, #letter-L li a, #letter-M li a, #letter-N li a, #letter-O li a, #letter-P li a, #letter-Q li a, #letter-R li a, #letter-S li a, #letter-T li a, #letter-U li a, #letter-V li a, #letter-W li a, #letter-X li a, #letter-Y li a, #letter-Z li a {
  padding: 5px;
  text-decoration: none;
  color: var(--offwhite);
