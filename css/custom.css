@@ -24,9 +24,10 @@ body, html {
   line-height: 1.8;
 }
 
-n-black {
+.n-black {
   background-color: var(--offblack);
 }
+
 
 /* Full height image header */
 .bgimg-1 {
@@ -71,12 +72,12 @@ n-black {
 }
 
 /* Style the navigation menu */
-#nostrClients {
+#nostrClients, #nostrGlossary {
  padding: 0;
  margin: 0;
 }
 
-#nostrClients {
+#nostrClients, #nostrGlossary {
    list-style-type: none;
    text-decoration: none;
 }
@@ -86,10 +87,10 @@ n-black {
   margin: 0;
 }
 
-.nostrClient li, #letter-A li, #letter-B li, #letter-C li, #letter-D li, #letter-E li, #letter-F li, #letter-G li, #letter-H li, #letter-I li, #letter-J li, #letter-K li, #letter-L li, #letter-M li, #letter-N li, #letter-O li, #letter-P li, #letter-Q li, #letter-R li, #letter-S li, #letter-T li, #letter-U li, #letter-V li, #letter-W li, #letter-X li, #letter-Y li, #letter-Z li
+.nostrClient li, #letter-A li, #letter-B li, #letter-C li, #letter-D li, #letter-E li, #letter-F li, #letter-G li, #letter-H li, #letter-I li, #letter-J li, #letter-K li, #letter-L li, #letter-M li, #letter-N li, #letter-O li, #letter-P li, #letter-Q li, #letter-R li, #letter-S li, #letter-T li, #letter-U li, #letter-V li, #letter-W li, #letter-X li, #letter-Y li, #letter-Z li, #glossary li
 {
-   list-style-type: none !important;
-   text-decoration: none !important;
+   list-style-type: none;
+   text-decoration: none;
 }
 
 /* Style the navigation links */
@@ -101,6 +102,21 @@ n-black {
   color: var(--offwhite);
   display: block;
 }
+
+#glossary li a {
+  padding: 1px;
+  text-decoration: none;
+  color: var(--offwhite);
+  display: block;
+}
+
+.n-link {
+  color: #000000 !important;
+  text-decoration: underline !important;
+  display: inline !important;
+}
+
+
 
 
 .navbar {
