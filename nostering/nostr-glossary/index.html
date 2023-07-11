@@ -13,7 +13,7 @@
   <meta property="og:title" content="Nostr Glossary" />
   <meta property="og:description" content="A searchable list of nostr terms" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://nostr-ings.com/nostering/nostr-faq/index.html" />
+  <meta property="og:url" content="https://nostr-ings.com/nostering/nostr-glossary/index.html" />
   <meta property="og:image" content="https://nostr-ings.com/assets/images/about/nostr-glossary.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -28,11 +28,13 @@
       <!-- Right-sided navbar links -->
       <div class="w3-right w3-hide-small">
         <!--- nostering --->
-        <a href="../index.html" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-cog"></i>&nbsp;&nbsp;nostering</a>
+        <a href="../index.html" class="w3-bar-item w3-border-bottom w3-button w3-hover-purple"><i class="fa fa-cog"></i>&nbsp;&nbsp;nostering</a>
         <!--- keep nostr weird --->
         <a href="../../keep-nostr-weird/index.html" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-compass"></i>&nbsp;&nbsp;keep nostr weird</a>
-        <!--- donate --->
-        <a href="../../about/index.html" alt="donate" class="w3-bar-item w3-button w3-hover-amber"><i class="fa fa-bolt"></i>&nbsp;&nbsp;donate</a>
+        <!--- b free --->
+        <a href="../../b-free/index.html" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-print"></i>&nbsp;&nbsp;b-free</a>
+        <!--- about --->
+        <a href="../../about/index.html" alt="about" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-bolt"></i>&nbsp;&nbsp;about</a>
       </div>
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
       <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-purple w3-right w3-hide-large w3-hide-medium"
@@ -47,13 +49,13 @@
     <!--- close --->
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple w3-large w3-padding-16">close ×</a>
     <!--- home --->
-    <a href="../../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-purple w3-hover-purple"><i class="fa fa-home"></i>&nbsp;&nbsp;nostr-ings</a>
+    <a href="../../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-black w3-hover-purple"><i class="fa fa-home"></i>&nbsp;&nbsp;nostr-ings</a>
     <!--- nostering --->
-    <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-cog"></i>&nbsp;&nbsp;nostering</a>
+    <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-purple w3-hover-white"><i class="fa fa-cog"></i>&nbsp;&nbsp;nostering</a>
     <!--- keep nostr weird --->
     <a href="../../keep-nostr-weird/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-compass"></i>&nbsp;&nbsp;keep nostr weird</a>
-    <!--- donate --->
-    <a href="../../about/index.html" alt="donate" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-amber"><i class="fa fa-bolt"></i>&nbsp;&nbsp;donate</a>
+    <!--- about --->
+    <a href="../../about/index.html" alt="about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple"><i class="fa fa-bolt"></i>&nbsp;&nbsp;about</a>
   </nav>
   <!--- End nav --->
 <!-- Header with full-height image -->
@@ -68,7 +70,7 @@
 <!-- Nostr client Section -->
 <!-- Alphabetical Order -->
 <div id="nostrGlossary">
-<!--- letter N--->
+<!--- nostr glossary--->
 <div id="glossary">
 <ul class="w3-container menu nostrlist">
 <div class="w3-container w3-padding">
@@ -140,7 +142,22 @@
               <p class="w3-large">Nostr is a protocol, which means its code is open so any developer can create unique apps and websites. You can log in to most of them with one account. Think of it like being able to enter either Facebook or Twitter, and have your identity in both of them, regardless of which one you use. Anyone could find you on either of them, and you could login to both of them or just one of them and find your same notes, follows, followers... You could send your notes on either of them and see them in both. The magic of nostr. <a href="../../index.html" class="n-link w3-hover-purple" alt="nostrverse search page">Discover the nostrverse</a>. </p>
           </div>
         </li>
+      <!--- relays --->
+        <li class="nostrTerm" id="relay">
+          <div class="w3-display-container">
+              <div class="w3-display w3-xlarge w3-black w3-hover-black">
+                <h2><a href="#relay" target="new" alt="relays"> <span class="w3-padding">relays</span></a></h2>
+              </div>
+              <h3 class="w3-xlarge w3-light-grey w3-padding">Relays help make nostr decentralized & censorship resistant</h3>
+              <p class="w3-large">Notes are spread out unto cyberspace through servers running nostr software, called relays. Relays make nostr special, because they do not rely on a single company, and they do not own your account. Anyone who's a little tech savvy could <a href="https://andreneves.xyz/p/set-up-a-nostr-relay-server-in-under" target="new" alt="how to run your own relay" class="n-link w3-hover-purple">run a relay</a>.</p>
+              <p class="w3-large">The nostr relays keep your information and share it with other relays. Adding a few relays to your nostr account is a way to make sure your information is still available even if a relay were to go down. It is also a way to be able to read the posts of the people you follow. Some nostr clients add a set of relays automatically, others suggest them based on your follows.</p>
+              <h3 class="w3-large w3-light-grey w3-padding">If you add too many relays, your nostr experience could slow down. What's the magic number 8!?.</h3>
+              <p class="w3-large">Some relays are paid and they may have less spam.</p>
 
+              <p class="w3-large w3-leftbar w3-light-grey w3-padding">Comprehensive relay list: <a href="https://nostr.watch/relays/find" target="new" alt="relays list" class="n-link w3-hover-purple">nostr.watch</a></p>
+              <p class="w3-large w3-leftbar w3-light-grey w3-padding"><b>TIP: Use a VPN service to protect your IP (like Mullvad).</b> Nostr does not gather and sell your information like other platforms, but relays can know your IP.</p>
+            </div>
+          </li>
 <!--- end of Glossary --->
     </div>
 
@@ -152,14 +169,14 @@
 <footer class="w3-container w3-padding w3-black">
   <div class="w3-row-padding">
   <div class="w3-half w3-padding">
-    <h2 class="n-text-purple">nostr-ings</h2>
-    <p>Discovering the wonder of the nostrverse...</p>
+    <h2 class="n-text-purple w3-xxlarge">nostr-ings</h2>
+    <p class="w3-large">A handbook to the nostrverse</p>
   </div>
   <div class="w3-half w3-padding">
-    <a href="nostr:npub1a7n2h5y3gt90y00mwrknhx74fyzzjqw25ehkscje58x9tfyhqd5snyvfnu" class="w3-button w3-black w3-hover-purple w3-round" target="new"><img src="assets/images/nostr.svg" alt="nostr"></a>
-    <a href="https://github.com/nostr-ings" target="new" alt="nostr-ings on github" class="w3-button w3-black w3-hover-purple w3-round"><img src="assets/images/github.svg" alt="github"></a>
-    <a class="w3-button w3-black w3-hover-purple w3-round" href="https://discord.gg/bJrWFds6je" target="new" alt="Nostr-ings on discord"><img src="assets/images/discord.svg" alt="discord"></a>
-    <a href="../../about/index.html" class="w3-button w3-black w3-hover-purple text-light w3-round"><img src="assets/images/zap.svg" alt="donate"></a>
+    <a href="nostr:npub1a7n2h5y3gt90y00mwrknhx74fyzzjqw25ehkscje58x9tfyhqd5snyvfnu" class="w3-button w3-black w3-hover-purple w3-round" target="new"><img src="../../assets/images/nostr.svg" alt="nostr"></a>
+    <a href="https://github.com/nostr-ings" target="new" alt="nostr-ings on github" class="w3-button w3-black w3-hover-purple w3-round"><img src="../../assets/images/github.svg" alt="github"></a>
+    <a class="w3-button w3-black w3-hover-purple w3-round" href="https://discord.gg/bJrWFds6je" target="new" alt="Nostr-ings on discord"><img src="../../assets/images/discord.svg" alt="discord"></a>
+    <a href="../../about/index.html" class="w3-button w3-black w3-hover-purple text-light w3-round"><img src="../../assets/images/zap.svg" alt="donate"></a>
   </div>
   </div>
 </footer>
