@@ -176,3 +176,8 @@ body, html {
 .subnav:hover .subnav-content {
   display: block;
 }
+
+.video {
+  max-width: 100%;
+  height: auto;
+}
