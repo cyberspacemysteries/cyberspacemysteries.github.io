@@ -28,6 +28,10 @@ body, html {
   background-color: var(--offblack);
 }
 
+.n-no-border, .n-no-border a, .n-no-border:hover {
+  border: none !important;
+}
+
 
 /* Full height image header */
 .bgimg-1 {
