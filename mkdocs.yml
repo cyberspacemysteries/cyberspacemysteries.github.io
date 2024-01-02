@@ -111,8 +111,8 @@ theme:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - tags
 
-  # markdown extensions
-  markdown_extensions:
+# markdown extensions
+markdown_extensions:
   - abbr
   - admonition
   - attr_list
@@ -128,20 +128,18 @@ theme:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-  # additional config
-  extra:
-    status:
-      new: new
-      recommended: recommended
-    social:
-      - icon: fontawesome/brands/github
-        link: https://github.com/elidyweaver
+# additional config
+extra:
+  status:
+    new: new
+    recommended: recommended
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/elidyweaver
 
-  # page tree
-  nav:
-    - Home: https://cyberspacemysteries.github.io
-    - Blog:
-      - 'Cyberspace Mysteries':
-        - 'Cyberspace Mysteries': posts/index.md
-      - 'Gift and Nemesis':
-        - 'Cyberspace Mysteries': posts/gift-and-nemesis/index.md
+# page tree
+nav:
+  - Home: index.md
+  - BUIDL HODL time:
+    - 'BUIDL HODL time': buidl-hodl-time/index.md
+    - 'Nostr in time': buidl-hodl-time/before-and-after/nostr-in-time/index.md
