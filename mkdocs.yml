@@ -107,14 +107,17 @@ plugins:
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - tags
-
-# Additional configuration
+  
+# additional configuration:
 extra:
   status:
-    new: Recently added
-    deprecated: Deprecated
+    new: new
+    recommended: recommended
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/elidyweaver
 
-# Extensions
+# markdown extensions
 markdown_extensions:
   - abbr
   - admonition
