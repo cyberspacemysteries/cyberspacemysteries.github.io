@@ -1,23 +1,23 @@
+# Hello. Welcome to cyberspace mysteries. This site is built with MKDocs (material theme) & Github pages.
 site_name: cyberspacemysteries 
 site_url: https://cyberspacemysteries.github.io
 site_author: elidyweaver
 site_description: exploring the why behind empowering technologies
+
 # repository
-repo_name: cyberspacemysteries
+repo_name: cyberspacemysteries/cyberspacemysteries.github.io
 repo_url: https://github.com/cyberspacemysteries/cyberspacemysteries.github.io
 
 # copyright
-copyright: 
+copyright: creative commons 0, except when sharing other projects or artworks. 
 
-# config
+# theme design
 theme: 
   name: material
   custom_dir: overrides
   language: en
-  
   extra_css:
-  - stylesheets/extra.css
-
+    - stylesheets/extra.css
   features:
     - announce.dismiss
     - content.action.edit
@@ -44,42 +44,41 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
-    - toc.integrate
+    # toc.integrate
 
   palette: 
-    # Palette toggle for light mode
-    - scheme: default
-      primary: white
-      accent: amber
-      toggle:
-        icon: material/brightness-7 
-        name: Switch to dark mode
-
     # Palette toggle for dark mode
     - scheme: slate
       primary: black
       accent: amber
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
+        name: Switch to day mode
+    # Palette toggle for light mode
+    - scheme: default
+      primary: white
+      accent: amber
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to night mode
   font:
     text: Roboto
     code: Roboto Mono
     font: false
   favicon: assets/images/favicon.png
   logo: assets/images/logo.png
-
   icon:
     repo: material/github
     tags:
       nostr: material/note/text
       bitcoin: material/bitcoin
 
-  plugins:
+# Plugins
+plugins:
   - blog:
+      enabled: true
       blog_dir: .
       blog_toc: true
-      post_dir: "{blog}/articles"
       post_date_format: full
       post_url_date_format: yyyy/MM/dd
       post_url_format: "{categories}/{slug}"
@@ -104,44 +103,66 @@ theme:
       draft_on_serve: true
       draft_if_future_date: true
   - privacy
-  - social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/cyberspacemysteries/cyberspacemysteries.github.io
+  - offline
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - tags
 
-  # markdown extensions
-  markdown_extensions:
+# Additional configuration
+extra:
+  status:
+    new: Recently added
+    deprecated: Deprecated
+
+# Extensions
+markdown_extensions:
   - abbr
   - admonition
   - attr_list
   - def_list
   - footnotes
   - md_in_html
-  - pymdownx.critic
+  - toc:
+      title: On this page
+      permalink: ⚓︎
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      toc_depth: 5
+  - tables
+
+# python markdown extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
   - pymdownx.caret
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
+  - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: cyberspacemysteries
+      repo: cyberspacemysteries.github.io
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
-  # additional config
-  extra:
-    status:
-      new: new
-      recommended: recommended
-    social:
-      - icon: fontawesome/brands/github
-        link: https://github.com/elidyweaver
-
-  # page tree
-  nav:
-    - Home: https://cyberspacemysteries.github.io
-    - Blog:
-      - 'Cyberspace Mysteries':
-        - 'Cyberspace Mysteries': posts/index.md
-      - 'Gift and Nemesis':
-        - 'Cyberspace Mysteries': posts/gift-and-nemesis/index.md
+# page tree
+nav:
+  - About: 
+    - 'About': index.md
+  - Series: 
+    - 'BUIDL HODL': 
+      - 'principles': buidl-hodl/index.md
+      - 'Nostr in time': buidl-hodl/time/before-and-after/nostr/index.md

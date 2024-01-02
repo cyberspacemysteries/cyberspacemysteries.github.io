@@ -1,8 +1,9 @@
 ---
 draft: false 
-date: 2024-01-01 
+date: 2024-01-02 
 tags:
-  - low time preference
+  - nostr
+  - before and after
 authors: [cyberspacemysteries, elidyweaver]
 categories:
   - nostr in time
@@ -36,6 +37,6 @@ One of the best features in nostr is showing content based on who you follow and
 
 Coracle has taken a unique approach to this. It now has a note button that finds music on nostr from your network. You can listen while you look through your notes. 
 
-[![Nostr in time: Coracle screenshot from february 2023](../../../assets/images/nostr-in-time/nostr-in-time-coracle-2023-02-feb.png)](https://coracle.social 'coracle social website')
+[![Nostr in time: Coracle screenshot from february 2023](../../../../assets/images/nostr-in-time/nostr-in-time-coracle-2023-02-feb.png)](https://coracle.social 'coracle social website')
 
-[![Nostr in time: Coracle screenshot from january 2024](../../../assets/images/nostr-in-time/nostr-in-time-coracle-2024-01-jan.png)](https://coracle.social 'coracle social website')
+[![Nostr in time: Coracle screenshot from january 2024](../../../../assets/images/nostr-in-time/nostr-in-time-coracle-2024-01-jan.png)](https://coracle.social 'coracle social website')
