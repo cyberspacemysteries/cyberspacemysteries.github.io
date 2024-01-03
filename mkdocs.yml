@@ -1,5 +1,5 @@
 # Hello. Welcome to cyberspace mysteries. This site is built with MKDocs (material theme) & Github pages.
-site_name: cyberspacemysteries 
+site_name: cyberspaceMysteries 
 site_url: https://cyberspacemysteries.github.io
 site_author: elidyweaver
 site_description: exploring the why behind empowering technologies
@@ -9,7 +9,7 @@ repo_name: cyberspacemysteries/cyberspacemysteries.github.io
 repo_url: https://github.com/cyberspacemysteries/cyberspacemysteries.github.io
 
 # copyright
-copyright: creative commons 0, except when sharing other projects or artworks. 
+copyright: Powered by shaka hugs. Built to be free. Content and art released under a creative commons 0 license, except when content is about projects and art not created by elidy.
 
 # theme design
 theme: 
@@ -19,7 +19,7 @@ theme:
   extra_css:
     - stylesheets/extra.css
   features:
-    - announce.dismiss
+    # announce.dismiss
     - content.action.edit
     - content.action.view
     - content.code.annotate
@@ -52,7 +52,7 @@ theme:
       primary: black
       accent: amber
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-night
         name: Switch to day mode
     # Palette toggle for light mode
     - scheme: default
@@ -76,7 +76,12 @@ theme:
 # Plugins
 plugins:
   - blog:
-      enabled: true
+      archive: true
+      archive_name: archive
+      archive_date_format: yyyy/MM/dd
+      archive_toc: true
+      authors: true
+      authors_file: .authors.yml
       blog_dir: .
       blog_toc: true
       post_date_format: full
@@ -92,8 +97,13 @@ plugins:
       categories_name: Series
       categories_url_format: "series/{category}/{slug}"
       categories_toc: true
-      authors: true
-      authors_file: .authors.yml
+      categories_allowed:
+        - before and after
+        - BUIDL HODL 
+        - gift and nemesis
+        - nostr in time
+        - decentralization
+      enabled: true
       pagination: true
       pagination_per_page: 5
       pagination_url_format: "page/{page}"
@@ -102,8 +112,15 @@ plugins:
       draft: false
       draft_on_serve: true
       draft_if_future_date: true
-  - privacy
   - offline
+  - privacy
+  - rss:
+      match_path: blog/posts/.* 
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - tags
@@ -115,7 +132,10 @@ extra:
     recommended: recommended
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/elidyweaver
+      link: https://github.com/cyberspacemysteries/cyberspacemysteries.github.io
+    - icon: fontawesome/solid/n
+      link: https://nostr.com/npub1a7n2h5y3gt90y00mwrknhx74fyzzjqw25ehkscje58x9tfyhqd5snyvfnu
+
 
 # markdown extensions
 markdown_extensions:
@@ -163,9 +183,13 @@ markdown_extensions:
 
 # page tree
 nav:
-  - About: 
-    - 'About': index.md
-  - Series: 
+  - about: 
+    - 'about': index.md
+  - series: 
     - 'BUIDL HODL': 
       - 'principles': buidl-hodl/index.md
-      - 'Nostr in time': buidl-hodl/time/before-and-after/nostr/index.md
+      - 'nostr in time': buidl-hodl/time/before-and-after/nostr/index.md
+      # 'decentralization': buidl-hodl/decentralization/index.md
+
+
+
