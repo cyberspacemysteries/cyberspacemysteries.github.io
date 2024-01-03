@@ -114,13 +114,13 @@ plugins:
       draft_if_future_date: true
   - offline
   - privacy
-  - rss:
-      match_path: blog/posts/.* 
-      date_from_meta:
-        as_creation: date
-      categories:
-        - categories
-        - tags
+  # rss:
+      #match_path: blog/posts/.* 
+      #date_from_meta:
+        #as_creation: date
+      #categories:
+        #- categories
+        #- tags
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - tags
