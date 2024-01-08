@@ -12,7 +12,7 @@ categories:
 ---
 
 # nostr in time
-## a before and after
+## before and after
 
 **Looking at nostr client progress.** 
 
@@ -20,7 +20,7 @@ categories:
 
 On our day to day use of nostr, it is easy to lose track of the many improvements and unique experiences it offers. If we look back in time, we can see how much some nostrverse projects have grown. This is a field trip to document those changes across time.
 
-### field trip focus
+ **field trip focus**
 
 - differentiating features
 - interoperability
@@ -29,21 +29,36 @@ On our day to day use of nostr, it is easy to lose track of the many improvement
 
 
 
-## Coracle
-developer: [hodlbod@coracle.social](https://nostr.com/npub1jlrs53pkdfjnts29kveljul2sm0actt6n8dxrrzqcersttvcuv3qdjynqn)
+## follows are nostr's algorithm
+### Coracle
+developer: [miljand@primal.net](https://primal.net/p/npub16c0nh3dnadzqpm76uctf5hqhe2lny344zsmpm6feee9p5rdxaa9q586nvr)
 
 *differentiating feature:* **music**
 
-### who you follow matters
 
-One of the best features in nostr is showing content based on who you follow and who your follows follow (a.k.a. your network). It helps focus on your interests, and it reduces spam. 
+One of the best features in nostr is showing content based on who you follow and who your follows follow (a.k.a. your network). It helps focus on your interests, and it reduces spam. While, in the future, nostr clients may offer choices in algorithms to curate content, it is good to always have the option to see content based on who and which topics you follow. You are the curator. 
 
 Coracle has taken a unique approach to this. It now has a button that finds music on nostr from your network. You can listen to that music while you look through your notes. 
 
 Have a favorite musician on nostr? Let me know.
 
-### before (early 2023)
+#### before (early 2023)
 [![Nostr in time: Coracle screenshot from february 2023](../../../../assets/images/nostr-in-time/nostr-in-time-coracle-2023-02-feb.png)](https://coracle.social 'coracle social website')
 
-### after (early 2024)
+#### after (early 2024)
 [![Nostr in time: Coracle screenshot from january 2024](../../../../assets/images/nostr-in-time/nostr-in-time-coracle-2024-01-jan.png)](https://coracle.social 'coracle social website')
+
+<!--- ## what constitutes growth?
+
+### Primal
+developer: miljan
+
+*differentiating feature:* **measuring network effects**
+
+
+#### before (early 2023)
+[![Nostr in time: Coracle screenshot from february 2023](../../../../assets/images/nostr-in-time/nostr-in-time-primal-2023-05-may.png)](https://primal.net 'primal website')
+
+#### after (early 2024)
+[![Nostr in time: Coracle screenshot from january 2024](../../../../assets/images/nostr-in-time/nostr-in-time-primal-2024-01-jan.png)](https://primal.net 'coracle social website') --->
+

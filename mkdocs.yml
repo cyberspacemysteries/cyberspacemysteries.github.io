@@ -77,7 +77,7 @@ theme:
 plugins:
   - blog:
       archive: true
-      archive_name: archive
+      archive_name: history
       archive_date_format: yyyy/MM/dd
       archive_toc: true
       authors: true
@@ -151,7 +151,7 @@ markdown_extensions:
       slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower
-      toc_depth: 5
+      toc_depth: 2
   - tables
 
 # python markdown extensions
@@ -190,6 +190,9 @@ nav:
       - 'principles': buidl-hodl/index.md
       - 'nostr in time': buidl-hodl/time/before-and-after/nostr/index.md
       # 'decentralization': buidl-hodl/decentralization/index.md
+    - 'gift and nemesis':
+      - 'contrasts': gift-and-nemesis/index.md
+      - 'decentralization': gift-and-nemesis/decentralization/index.md
 
 
 
