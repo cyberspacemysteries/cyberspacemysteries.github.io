@@ -6,4 +6,4 @@
 
 ## latest
 
-[![are you the product? type poster](../../assets/images/gift-and-nemesis/you-are-the-product-1.png)](gift-and-nemesis/decentralization/index.md)
+[![are you the product? type poster](assets/images/gift-and-nemesis/you-are-the-product-1.png)](gift-and-nemesis/decentralization/index.md)

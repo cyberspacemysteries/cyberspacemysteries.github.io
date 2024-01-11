@@ -15,20 +15,20 @@ categories:
 ![are you the product? type poster](../../assets/images/gift-and-nemesis/you-are-the-product-1.png)
 
 # are you the product?
-## you are NOT the product on nostr
 
 In a social media landscape where your data is sold to advertisers and can be given to governments (concerning if you're a journalist, activist, have minority points of view...), the Nostr is a refreshing alternative.
 
-## But why? What can go wrong with other social networks? 
+## you are NOT the product on nostr
 
 <!-- excerpt ends before this -->
 
+## But why? What can go wrong with other social networks? 
 ![when one company owns and controls your data...](../../assets/images/gift-and-nemesis/you-are-the-product-2.png)
 
+## social media sell your data
+![social media sell your data](../../assets/images/gift-and-nemesis/you-are-the-product-3.png)
 
-![your data is sold](../../assets/images/gift-and-nemesis/you-are-the-product-3.png)
-
-
+## what you feel is yours can get taken away:
 ![it is NOT really your handle, @GotTakenAway](../../assets/images/gift-and-nemesis/you-are-the-product-4.png)
 
 ![your posts can get shadow banned (not shown)](../../assets/images/gift-and-nemesis/you-are-the-product-5.png)
@@ -37,7 +37,15 @@ In a social media landscape where your data is sold to advertisers and can be gi
 
 ![your social media is not yours](../../assets/images/gift-and-nemesis/you-are-the-product-7.png)
 
+## with other social networks, you are the product
 ![social media centralization](../../assets/images/gift-and-nemesis/social-media-centralization.png)
 
+## you own your nostr
+
+![you own your nostr](../../assets/images/gift-and-nemesis/you-own-your-nostr-1.png)
+
+## you can choose your favorite handle
+
+![you can have your favorite handle](../../assets/images/gift-and-nemesis/you-own-your-nostr-2.png)
 
 **2B continued...**
