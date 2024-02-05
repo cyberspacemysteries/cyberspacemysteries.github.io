@@ -2,52 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://cyberspacemysteries.github.io/index.html</loc>
-         <lastmod>2024-02-01</lastmod>
+         <lastmod>2024-02-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cyberspacemysteries.github.io/buidl-hodl/index.html</loc>
-         <lastmod>2024-02-01</lastmod>
+         <lastmod>2024-02-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cyberspacemysteries.github.io/buidl-hodl/decentralization/index.html</loc>
-         <lastmod>2024-02-01</lastmod>
+         <lastmod>2024-02-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cyberspacemysteries.github.io/buidl-hodl/keys/index.html</loc>
+         <lastmod>2024-02-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cyberspacemysteries.github.io/buidl-hodl/time/before-and-after/nostr/index.html</loc>
-         <lastmod>2024-02-01</lastmod>
+         <lastmod>2024-02-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cyberspacemysteries.github.io/freedom-tech-meetup/index.html</loc>
-         <lastmod>2024-02-01</lastmod>
+         <lastmod>2024-02-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cyberspacemysteries.github.io/freedom-tech-meetup/nostr/index.html</loc>
-         <lastmod>2024-02-01</lastmod>
+         <lastmod>2024-02-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cyberspacemysteries.github.io/freedom-tech-meetup/nostr/the-nostr-unbadges/index.html</loc>
-         <lastmod>2024-02-01</lastmod>
+         <lastmod>2024-02-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cyberspacemysteries.github.io/freedom-tech-meetup/nostr/the-nostr-unlogo/index.html</loc>
-         <lastmod>2024-02-01</lastmod>
+         <lastmod>2024-02-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cyberspacemysteries.github.io/gift-and-nemesis/index.html</loc>
-         <lastmod>2024-02-01</lastmod>
+         <lastmod>2024-02-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cyberspacemysteries.github.io/gift-and-nemesis/decentralization/index.html</loc>
-         <lastmod>2024-02-01</lastmod>
+         <lastmod>2024-02-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
