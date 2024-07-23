@@ -1,5 +1,13 @@
 {
   "names": {
     "elidy": "efa6abd09142caf23dfb70ed3b9bd549042901caa66f686259a1cc55a4970369"
+  },
+  "relays": {
+    "efa6abd09142caf23dfb70ed3b9bd549042901caa66f686259a1cc55a4970369": [
+      "wss://relay.primal.net",
+      "wss://relay.damus.io",
+      "wss://nostr.wine",
+      "wss://hist.nostr.land"
+    ]
   }
 }
