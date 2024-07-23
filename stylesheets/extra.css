@@ -17,9 +17,39 @@
 }
 
 
-/* homepage */
-.mdx-container {
-  padding:  35px;
+/* text */
+
+h1 {
+  font-size:  2.5em !important;
+}
+
+h1.home {
+  font-size:  3em;
+  padding:  5px 0;
+  margin:  0;
+}
+
+h2 {
+  font-size:  2em !important;
+}
+
+h2.home {
+  font-size: 1.5em;
+  margin:  0 0 35px 0;
+}
+
+h3 {
+  font-size:  1.8em !important;
+}
+
+p {
+  font-size:  1.15em;
+}
+
+/* links and buttons */
+
+a {
+  color:  #C59210 !important;
 }
 
 a.home-read {
@@ -43,13 +73,7 @@ a.home-about:hover {
 }
 
 
-h1.home {
-  font-size:  3em;
-  padding-bottom:  0;
-  margin-bottom:  0;
-}
-
-h2.home {
-  font-size: 2.3em;
-  margin-top: 8px;
+/* homepage */
+.mdx-container {
+  padding:  35px;
 }
