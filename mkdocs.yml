@@ -1,0 +1,231 @@
+# Hello. Welcome to cyberspace mysteries. This site is built with MKDocs (material theme) & Github pages.
+site_name: freedom weaver 
+site_url: https://freedomweaver.tech
+site_author: elidyweaver
+site_description: exploring the why behind empowering technologies
+
+# repository
+repo_name: cyberspacemysteries/cyberspacemysteries.github.io
+repo_url: https://github.com/cyberspacemysteries/cyberspacemysteries.github.io
+
+# copyright
+copyright: Powered by shaka hugs. Built to be free. Content and art released under a creative commons 0 license, except when content is about projects and art not created by elidy.
+
+# theme design
+theme: 
+  name: material
+  custom_dir: overrides
+  language: en
+  extra_css:
+    - stylesheets/extra.css
+  extra_javascript:
+    - javascripts/extra.js
+  features:
+    # announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # toc.integrate
+
+  palette: 
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: black
+      accent: black
+      toggle: 
+        icon: material/weather-night
+        name: Switch to day mode
+    # Palette toggle for light mode
+    - scheme: default
+      primary: black
+      accent: black
+      toggle: 
+        icon: material/brightness-7 
+        name: Switch to night mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+    font: false
+  favicon: assets/images/favicon.png
+  logo: assets/images/logo.png
+  icon:
+    repo: material/github
+    tags:
+      nostr: material/note/text
+      bitcoin: material/bitcoin
+
+# Plugins
+plugins:
+  - blog:
+      archive: false
+      archive_name: history
+      archive_date_format: yyyy/MM/dd
+      archive_toc: false
+      authors: true
+      authors_file: .authors.yml
+      blog_dir: .
+      blog_toc: true
+      post_date_format: full
+      post_url_date_format: yyyy/MM/dd
+      post_url_format: "{categories}/{slug}"
+      post_url_max_categories: 1
+      post_excerpt: required
+      post_excerpt_max_authors: 2
+      post_excerpt_max_categories: 3
+      post_excerpt_separator: <!-- excerpt ends before this -->
+      post_readtime: true
+      categories: true
+      categories_name: Series
+      categories_url_format: "series/{category}/{slug}"
+      categories_toc: true
+      categories_allowed:
+        - before and after
+        - BUIDL HODL 
+        - gift and nemesis
+        - nostr in time
+        - decentralization
+        - freedom meetup
+      enabled: true
+      pagination: true
+      pagination_per_page: 5
+      pagination_url_format: "page/{page}"
+      pagination_if_single_page: false
+      pagination_format: "$link_first $link_previous ~2~ $link_next $link_last"
+      draft: false
+      draft_on_serve: true
+      draft_if_future_date: true
+  - offline
+  - privacy
+  # rss:
+      #match_path: blog/posts/.* 
+      #date_from_meta:
+        #as_creation: date
+      #categories:
+        #- categories
+        #- tags
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - tags
+  
+# additional configuration:
+extra:
+  status:
+    new: new
+    recommended: recommended
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/cyberspacemysteries/cyberspacemysteries.github.io
+    - icon: fontawesome/solid/n
+      link: https://nostr.com/npub1a7n2h5y3gt90y00mwrknhx74fyzzjqw25ehkscje58x9tfyhqd5snyvfnu
+
+
+# markdown extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      title: On this page
+      permalink: ⚓︎
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      toc_depth: 2
+  - tables
+
+# python markdown extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: cyberspacemysteries
+      repo: cyberspacemysteries.github.io
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# page tree
+nav:
+  - home: 
+    - 'home': index.md
+  - read:
+    - '- read': 
+      - 'read': read/index.md
+  - now and then:
+    - '- now and then': 
+      - 'now and then': now-and-then/index.md
+  - research and ideas: 
+    - '- BUIDL HODL': 
+      - 'principles': buidl-hodl/index.md
+      - 'freedom': buidl-hodl/freedom/index.md
+      - 'experience': buidl-hodl/experience/index.md 
+      - 'keys': buidl-hodl/keys/index.md 
+      - 'limited': buidl-hodl/limited/index.md 
+      - 'nostr in time': buidl-hodl/time/before-and-after/nostr/index.md
+      - 'openness': buidl-hodl/openness/index.md 
+      - 'proof of work': buidl-hodl/proof-of-work/index.md 
+      - 'trust': buidl-hodl/trust/index.md 
+      - 'value4value': buidl-hodl/value4value/index.md 
+    - '- gift and nemesis':
+      - 'contrasts': gift-and-nemesis/index.md  
+      - 'decentralization': gift-and-nemesis/decentralization/index.md
+      - 'empowerment': gift-and-nemesis/empowerment/index.md
+      - 'ethics': gift-and-nemesis/ethics/index.md 
+      - 'incentives': gift-and-nemesis/incentives/index.md
+      - 'mistakes': gift-and-nemesis/mistakes/index.md 
+      - 'network effects': gift-and-nemesis/network-effects/index.md 
+      - 'originality': gift-and-nemesis/originality/index.md
+      - 'protocols over platforms': gift-and-nemesis/protocols-over-platforms/index.md 
+      - 'truth': gift-and-nemesis/truth/index.md
+  - keep nostr weird:
+    - '- nostr meetup kit': 
+      - 'nostr meetup kit': freedom-tech-meetup/nostr/index.md
+      - 'the unlogo': freedom-tech-meetup/nostr/the-nostr-unlogo/index.md
+      - 'the unbadges': freedom-tech-meetup/nostr/the-nostr-unbadges/index.md
+      - 'the untshirts': freedom-tech-meetup/nostr/the-nostr-untshirts/index.md
+      - 'the unstickers': freedom-tech-meetup/nostr/the-nostr-unstickers/index.md
+  - terminology:
+    - '- terminology': 
+      - 'terminology': terminology/index.md
+
+

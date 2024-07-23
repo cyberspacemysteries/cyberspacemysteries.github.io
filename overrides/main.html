@@ -1,0 +1,26 @@
+
+{% extends "base.html" %}
+
+<!-- Custom front matter -->
+{% block extrahead %}
+
+  <!-- Extra style sheets (can't be set in mkdocs.yml due to content hash) -->
+
+  <link
+    rel="stylesheet"
+    href="{{ 'stylesheets/extra.css' | url }}"
+  />
+{% endblock %}
+
+<!-- Announcement bar -->
+{% block announce %}
+ 
+{% endblock %}
+
+<!-- Theme-related JavaScript -->
+{% block scripts %}
+  {{ super() }}
+
+  <!-- Extra JavaScript (can't be set in mkdocs.yml due to content hash) -->
+  <script src="{{ 'javascripts/extra.js' | url }}"></script>
+{% endblock %}
