@@ -72,12 +72,33 @@ a.home-about:hover {
   background-color: black !important;
 }
 
+/* homepage */
+.mdx-container {
+  padding:  35px;
+}
+
 .footnote {
   inline-size:  300px;
   overflow-wrap:  break-word;
 }
 
-/* homepage */
-.mdx-container {
-  padding:  35px;
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.flex-item-half {
+  flex: 50%;
+}
+
+.flex-item-third {
+  flex: 33%;
+}
+
+
+@media (max-width: 800px) {
+  .flex-item-half, .flex-item-third{
+    flex: 100%;
+  }
+} 
