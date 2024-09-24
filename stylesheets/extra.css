@@ -48,6 +48,55 @@ p {
 
 /* links and buttons */
 
+a.fw-button  {
+  border-radius: 15px;
+  margin: 30px 0 !important;
+  padding: 15px 30px;
+
+
+}
+
+a.fw-button--primary {
+  background-color: #C59210;
+  color:  black !important;
+  font-weight:  600;
+}
+
+a.fw-button--primary:hover {
+  border:  2px solid black;
+}
+
+img {
+  border-radius:  50px;
+}
+
+
+a {
+  color:  #C59210 !important;
+}
+
+a.home-read {
+  color:  black !important;
+  background-color:  #C59210 !important;
+  border: solid #000000 2px !important;
+}
+
+a.home-read:hover {
+  background-color: white !important;
+}
+
+a.home-about {
+  color:  #959595 !important;
+  background-color: none !important;
+  border:  solid #959595 2px !important;
+}
+
+a.home-about:hover {
+  background-color: black !important;
+}
+
+/* colors */
+
 .alpha {
   color:  #C59210;
 }
@@ -76,29 +125,6 @@ p {
   padding:  0 5% 0 35%;
 }
 
-a {
-  color:  #C59210 !important;
-}
-
-a.home-read {
-  color:  black !important;
-  background-color:  #C59210 !important;
-  border: solid #000000 2px !important;
-}
-
-a.home-read:hover {
-  background-color: white !important;
-}
-
-a.home-about {
-  color:  #959595 !important;
-  background-color: none !important;
-  border:  solid #959595 2px !important;
-}
-
-a.home-about:hover {
-  background-color: black !important;
-}
 
 /* homepage */
 .mdx-container {

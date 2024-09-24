@@ -96,36 +96,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://freedomweaver.tech/freedom-tech-meetup/index.html</loc>
-         <lastmod>2024-09-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://freedomweaver.tech/freedom-tech-meetup/nostr/index.html</loc>
-         <lastmod>2024-09-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://freedomweaver.tech/freedom-tech-meetup/nostr/the-nostr-unbadges/index.html</loc>
-         <lastmod>2024-09-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://freedomweaver.tech/freedom-tech-meetup/nostr/the-nostr-unlogo/index.html</loc>
-         <lastmod>2024-09-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://freedomweaver.tech/freedom-tech-meetup/nostr/the-nostr-unstickers/index.html</loc>
-         <lastmod>2024-09-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://freedomweaver.tech/freedom-tech-meetup/nostr/the-nostr-untshirts/index.html</loc>
-         <lastmod>2024-09-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://freedomweaver.tech/gift-and-nemesis/index.html</loc>
          <lastmod>2024-09-24</lastmod>
          <changefreq>daily</changefreq>
@@ -172,6 +142,41 @@
     </url>
     <url>
          <loc>https://freedomweaver.tech/gift-and-nemesis/truth/index.html</loc>
+         <lastmod>2024-09-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://freedomweaver.tech/keep-tech-weird/index.html</loc>
+         <lastmod>2024-09-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://freedomweaver.tech/keep-tech-weird/kaleidoscope/index.html</loc>
+         <lastmod>2024-09-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://freedomweaver.tech/keep-tech-weird/nostr/index.html</loc>
+         <lastmod>2024-09-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://freedomweaver.tech/keep-tech-weird/nostr/the-nostr-unbadges/index.html</loc>
+         <lastmod>2024-09-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://freedomweaver.tech/keep-tech-weird/nostr/the-nostr-unlogo/index.html</loc>
+         <lastmod>2024-09-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://freedomweaver.tech/keep-tech-weird/nostr/the-nostr-unstickers/index.html</loc>
+         <lastmod>2024-09-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://freedomweaver.tech/keep-tech-weird/nostr/the-nostr-untshirts/index.html</loc>
          <lastmod>2024-09-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
